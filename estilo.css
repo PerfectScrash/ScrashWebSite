@@ -30,7 +30,7 @@ a {
 
 h1 {
 	font-size: 50px;
-	background-color: rgb(30, 0, 87);
+	background-color: rgba(30, 0, 87, 0.9);
 	padding: 2%;
 	border-radius: 50px;
 	box-shadow: inset 0px 0px 20px 3px white;
@@ -162,6 +162,10 @@ h2 {
 	box-shadow: 0px 0px 20px 3px rgb(255, 247, 0);
 }
 
+td {
+	text-align: left;
+}
+
 .corpo .inlineimg {
 	text-align: left;
 	border-radius: 0%;
@@ -207,6 +211,3 @@ table {
 	box-shadow: 0px 0px 15px 3px yellow;
 }
 
-td {
-	text-align: left;
-}
