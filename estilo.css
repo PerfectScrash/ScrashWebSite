@@ -201,7 +201,8 @@ table {
 	text-align: center;
 	font-size: 40px;
 	color: green;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	box-shadow: inset 0px 0px 15px 3px green;
 }
 
