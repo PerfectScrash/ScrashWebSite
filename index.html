@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Best of Scrash - Home</title>
-		<meta charset="utf-8">
-		<!-- <link rel="shortcut icon" href="Imagens/icon_113456469774756816e07b1570b0a1f4.ico"/> -->
-		<link rel="stylesheet" type="text/css" href="estilo.css">
-	</head>
-	<body>
-		<!-- <div class="etec_ti_verde">
-			<img src="Imagens/etec_gru.png" height="75" style="margin-right: 30%; margin-bottom: 10px;"> 
-			<img src="Imagens/ti_verde2.png" height="100">
-			<img src="Imagens/Centro_Paula_Souza.png" height="75" style="margin-left: 35%; margin-bottom: 10px;"> 
-			
-		</div> -->
+    <head>
+        <title>Scrash's Website</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+        <!-- <link rel="shortcut icon" href="Imagens/icon_113456469774756816e07b1570b0a1f4.ico"/> -->
+        <!--<link rel="stylesheet" type="text/css" href="estilo.css"> -->
 
-		<h1>Best of Scrash<br/><img style="margin-top: 1%;" src="Imagens/scrash.gif" width="400"></h1> 
-		<div class="menu">
-			<h3><a href="index.html">Home</a> | 
-				<a href="zp_special_official.html">Zombie Plague Special</a> | 
-				<a href="dbm_official.html">Dragon Ball Mod</a> | 
-				<a href="list_plugins.html">Plugin List</a> |
-				<a href="contact.html">Contact</a></h3>
-		</div>
-		<br/>
-		<div class="corpo">      
-			<p class="center"><img src="Imagens/scrash.gif" width="512">
-			<br/> Welcome to Best of Scrash, here you find the best plugins of Perfect Scrash<br/>
-			You Can see plugin list here:</p>
-			<a href="list_plugins.html"><div class="botao_normal">Plugin List</div></a>
-				
-			
-			<h2>Donate:</h2>
-			<p class="center">Do you like the some plugin and want to encourage my work? </p>
-			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8RJPHR3T8P6Y"><div class="botao_normal">Donate Here</div></a>
-			
-		</div>
-		<a href="list_plugins.html"><div class="botao_prox">Plugin List -></div></a>
-	</body>
+        <script type="text/javascript"> 
+    
+            function ler_pagina() {
+            
+                var qs = (function(a) {
+                if (a == "") return {};
+                var b = {};
+                for (var i = 0; i < a.length; ++i)
+                {
+                var p=a[i].split('=', 2);
+                if (p.length == 1)
+                b[p[0]] = "";
+                else
+                b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+                }
+                return b;
+                })(window.location.search.substr(1).split('&'));
+        
+                var varGet1 = qs["pag_dir"];
+                if(varGet1 != "" && varGet1 != " " && varGet1 != null  && varGet1 != undefined) {
+                    document.write("<div data-include='" + varGet1 + "'></div>")
+                }
+                else document.write("<div data-include='home'></div>")
+
+                document.write("<p class='text-white'>" + varGet1 + "</p>")
+            }
+        </script>
+    
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+
+    <body class="text-center text-light bg-image" style="background-image: url('Imagens/background_site.jpg'); background-size: cover;">
+    
+    <div data-include="nav_bar"></div>
+    <script>ler_pagina();</script>
+    <div data-include="footer"></div>    
+    
+    <!-- script>
+    includeHTML();
+    </script -->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"> 
+        $(function() {
+            var includes = $('[data-include]')
+            $.each(includes, function () {
+                var file = $(this).data('include') + '.html'
+                $(this).load(file)
+            })
+        })
+    </script> 
+    </body>
 </html>
