@@ -1,6 +1,6 @@
 <div class="container bg-dark p-3 text-start" style="border-radius: 20px;border: 1px;border-color: yellow;border-style: double;">
 	<a href="https://github.com/PerfectScrash/Zombie-Plague-Special/tree/master/Zombie%20Plague%20Special%204.4%20(Beta)">
-	<img src="Imagens/zpsp_banner_site.png" class="rounded-pill w-100" alt="Zombie Plague Special">	
+	<img src="Imagens/zpsp_banner_site.png" class="w-100" alt="Zombie Plague Special" style="border-radius: 50px;border: 2px;border-color: yellow;border-style: double;">	
 	</a>
 			
 
@@ -9,11 +9,13 @@
 	<p>And Some modes are added like Berserker, Predator, Bombardier (From ZP Shade), Wesker (From Zombie Apocalipse), Spy and Dragon</p>
 	
 	<h3>Game Play Modes:</h3>
-	<p>- Normal Modes: Simple Infection, Multiple Infection, Swarm Mode, Plague Mode, Armageddon<br>
-	- Special Modes: Nemesis, Survivor, Assassin, Sniper, Berserker, Predator, Wesker, Bombardier, Spy, Dragon<br>
-	- Custom Modes (If Enable): Assassin Vs Sniper, Nightmare, Remix<br>
-	- Custom Special Classes (If Enable): Morpheus, Alien<br>
-	- More Custom Modes (If you want):  <a href="https://github.com/PerfectScrash/ZP-Special-Mods" target="_blank" rel="nofollow noopener">CLICK HERE</a></p>
+	<ul>
+		<li>Normal Modes: Simple Infection, Multiple Infection, Swarm Mode, Plague Mode, Armageddon</li>
+		<li>Special Modes: Nemesis, Survivor, Assassin, Sniper, Berserker, Predator, Wesker, Bombardier, Spy, Dragon</li>
+		<li>Custom Modes (If Enable): Assassin Vs Sniper, Nightmare, Remix</li>
+		<li>Custom Special Classes (If Enable): Morpheus, Alien</li>
+		<li>More Custom Modes (If you want):  <a href="https://github.com/PerfectScrash/ZP-Special-Mods" target="_blank" rel="nofollow noopener">CLICK HERE</a></li>
+	</ul>
 
 	<h3>Special Classes Descriptions:</h3>
 	<ul>
@@ -48,38 +50,38 @@
 
 	<h3>Instaling Zombie Plague Special:</h3>
 	<ul>
-	<li>First at All Compile the .sma files</li>
-	<li>Move .amxx files to plugins directory (c:/.../addons/amxmodx/plugins)</li>
-	<li>Move all .cfg and .ini files to configs directory (c:/.../addons/amxmodx/configs)</li>
-	<li>Open plugins.ini in configs directory (c:/.../addons/amxmodx/configs)</li>
-	<li>And copy the plugin name and enable the main plugin, zombie classes and amx_settings, example: </li>
-	
+		<li>First at All Compile the .sma files</li>
+		<li>Move .amxx files to plugins directory (c:/.../addons/amxmodx/plugins)</li>
+		<li>Move all .cfg and .ini files to configs directory (c:/.../addons/amxmodx/configs)</li>
+		<li>Open plugins.ini in configs directory (c:/.../addons/amxmodx/configs)</li>
+		<li>And copy the plugin name and enable the main plugin, zombie classes and amx_settings, example: </li>
+		
 
-	<div class="card card-body text-white bg-dark mb-2">Code:
-<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: min-content; text-align: left; overflow: auto">
+		<div class="card card-body border-info text-white bg-dark mb-2">Code:
+	<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: min-content; text-align: left; overflow: auto">
 amx_settings_api.amxx
 zombie_plague_special_new.amxx
 zpsp_zombie_classes.amxx</pre></div>
 
-	<li>If you want to enable other mods copy the plugin name and paste bellow of 'zpsp_zombie_classes.amxx'</li>
-	<li>Now copy the directorys (Models, sounds, sprites) to the cstrike directory</li>
-	<li>Now Test the plugin</li>
-	</ul>
+		<li>If you want to enable other mods copy the plugin name and paste bellow of 'zpsp_zombie_classes.amxx'</li>
+		<li>Now copy the directorys (Models, sounds, sprites) to the cstrike directory</li>
+		<li>Now Test the plugin</li>
+		</ul>
 
-	<h3>Upgrading ZPSp 4.x to ZPSp 4.4 (Beta)</h3>
-	<ul>
-	<li> at all update your amx_settings_api to amx_settings in a file "Zombie Plague Special 4.4.zip" [Contain fixes]</li>
-	<li>Update your zombie_plague_special lang file</li>
-	<li>Update your zombie_plague_special.ini</li>
-	<li>Update your zombie_plague_special.cfg</li>
-	<li>Add new resources from a file "Zombie Plague Special 4.4 (Beta).zip"</li>
-	<li>Have Fun !!!!</li>
+		<h3>Upgrading ZPSp 4.x to ZPSp 4.4 (Beta)</h3>
+		<ul>
+		<li> at all update your amx_settings_api to amx_settings in a file "Zombie Plague Special 4.4.zip" [Contain fixes]</li>
+		<li>Update your zombie_plague_special lang file</li>
+		<li>Update your zombie_plague_special.ini</li>
+		<li>Update your zombie_plague_special.cfg</li>
+		<li>Add new resources from a file "Zombie Plague Special 4.4 (Beta).zip"</li>
+		<li>Have Fun !!!!</li>
 	</ul>
 
 	<h3>Adding Escape Map Support:</h3>
 	<p>Maps with have "ze_" prefix are support enable automaticaly. <br>
 	If your zombie escape map not have "ze_" prefix like "zm_boatescape" open "zombie_plague_special.ini", find and add:</p>
-	<div class="card card-body text-white bg-dark mb-2">Code:
+	<div class="card card-body border-info text-white bg-dark mb-2">Code:
 <pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: min-content; text-align: left; overflow: auto">
 [Escape Maps] (Add Zombie Escape Maps that not have "ze_" prefix like 'zm_boatescape')
 ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)</pre>
@@ -102,7 +104,7 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 		Change Log:
 	</button>
 	<div class="collapse mb-2" id="change_log">
-	<div class="card card-body text-white bg-dark mb-2">Change Log:
+	<div class="card card-body border-info text-white bg-dark mb-2">Change Log:
 <pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: auto; text-align: left; overflow: auto">
 * 1.0:
 - First Post
@@ -316,6 +318,6 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 - Added Cvar: "zp_extra_madness_use_delay"
 </pre>
 	</div></div><!-- Fim do changelog -->
-	<hr/><br/>
-	<a href="Downloads/Zombie%20Plague%20Special%204.4%20(Beta).zip" class="btn btn-primary btn-lg mt-3 text-center">Download Here</a>
+	<hr/>
+	<div class="text-center"><a href="Downloads/Zombie%20Plague%20Special%204.4%20(Beta).zip" class="btn btn-primary btn-lg mt-3 text-center">Download Here</a></div>
 </div>
