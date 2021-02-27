@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Scrash's Website</title>
+        <meta charset="utf-8">
+        <!-- <link rel="shortcut icon" href="Imagens/icon_113456469774756816e07b1570b0a1f4.ico"/> -->
+        <!--<link rel="stylesheet" type="text/css" href="estilo.css"> -->
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>    
+
+        <script>
+            function includeHTML() {
+                var z, i, elmnt, file, xhttp;
+                /*loop through a collection of all HTML elements:*/
+                z = document.getElementsByTagName("*");
+                for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                    }      
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+                }
+            };
+        </script>
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+
+    <body class="text-center text-light bg-image" style="background-image: url('Imagens/background_site.jpg'); background-size: cover;">
+
+    <div class="container mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-pill p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="Imagens/scrash.gif" alt="" height="24" class="d-inline-block align-top">
+                    Scrash's Plugins
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Main Plugins
+                        </a>
+                        <ul class="dropdown-menu navbar-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="zp_special_official.html">Zombie Plague Special</a></li>
+                        <li><a class="dropdown-item" href="dbm_official.html">Dragon Ball Mod</a></li>
+                        <!--<li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="list_plugins.html">Plugin List</a> -->
+                        <a class="nav-link" href="list_plugins.html">Plugin List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" href="#Modal_Contact">Contact</a>
+                    </li>
+                    </ul>
+                    <span class="navbar-text">
+                    See the Perfect Scrash's Amx Plugins
+                    </span>
+                </div>
+            </div>
+        </nav>
+    <br/>
+        
+    <div class="carrossel bg-dark p-3" style="border-radius: 20px;border: 1px;border-color: yellow;border-style: double;"> 
+        <div id="carrosel_primario" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner" style="border-radius: 50px;border: 2px;border-color: yellow;border-style: double;">
+
+            
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="Imagens/banner_site_scrash.gif" class="d-block w-100" alt="Welcome to Scrash's Website">
+                    <div class="carousel-caption d-none d-md-block rounded-pill" style="background-color: rgba(0, 0, 0, 0.8)">
+                        <h5>Welcome to Scrash's Website</h5>
+                        <p>Here you find the best plugins of Perfect Scrash</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <a href="zp_special_official.html"><img src="Imagens/zpsp_banner_site.png" class="d-block w-100" alt="Zombie Plague Special">
+                    <div class="carousel-caption d-none d-md-block rounded-pill" style="background-color: rgba(0, 0, 0, 0.8)">
+                        <h5>Zombie Plague Special 4.4</h5>
+                        <p>See the latest version of this Zombie Plague</p>
+                    </div></a>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="Imagens/dbm_banner_site.png" class="d-block w-100" alt="Dragon Ball Mod">
+                    <div class="carousel-caption d-none d-md-block rounded-pill" style="background-color: rgba(0, 0, 0, 0.8)">
+                        <h5>Dragon Ball Mod</h5>
+                        <p>See this greatest mod for Amx Mod X</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="Imagens/thanos_Banner.png" class="d-block w-100" alt="[ZPSp] Special Class: Thanos">
+                    <div class="carousel-caption d-none d-md-block rounded-pill" style="background-color: rgba(0, 0, 0, 0.8)">
+                        <h5>[ZPSp] Special Class: Thanos</h5>
+                        <p>See this greatest gamemod maked for Zombie Plague Special</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8RJPHR3T8P6Y"><img src="Imagens/banner_site_scrash.gif" class="d-block w-100" alt="Donate">
+                    <div class="carousel-caption d-none d-md-block rounded-pill" style="background-color: rgba(0, 0, 0, 0.8)">
+                        <h5>Donate:</h5>
+                        <p>Do you like the some plugin and want to encourage my work?</p>
+                    </div></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosel_primario"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosel_primario"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br/>
+        <hr/><br/>
+        <h3>Best ZPSp Custom Special Classes:</h3>
+        <div class="card-group mb-5">
+            <div class="card text-white bg-dark border-white mb-3 p-2">
+                <a href="Pages/Special_Classes/zpsp_spc_thanos.html" class="text-white text-decoration-none"><img src="Imagens/thanos_Banner.png" class="card-img-top" alt="Thanos">
+                <div class="card-body">
+                    <h5 class="card-title">[ZPSp] Special Class: Thanos</h5>
+                    <p class="card-text">See this gamemod maked for Zombie Plague Special based in movies</p>
+                </div></a>
+            </div>
+            <div class="card text-white bg-dark border-white mb-3 p-2">
+                <a href="Pages/Special_Classes/zpsp_spc_pain.html" class="text-white text-decoration-none"><img src="Imagens/pain_banner.png" class="card-img-top" alt="Pain">
+                <div class="card-body">
+                    <h5 class="card-title">[ZPSp] Special Class: Pain/Nagato</h5>
+                    <p class="card-text">Use Rinnegan's Skills against zombies :)</p>
+                </div></a>
+            </div>
+            <div class="card text-white bg-dark border-white mb-3 p-2">
+                <a href="Pages/Special_Classes/zpsp_spc_sonic_shadow.html" class="text-white text-decoration-none"><img src="Imagens/sonic_shadow_banner.png" class="card-img-top" alt="Thanos">
+                <div class="card-body">
+                    <h5 class="card-title">[ZPSp] Special Class: Sonic/Shadow</h5>
+                    <p class="card-text">Play a "Sonic 3D Game" in CS 1.6</p>
+                </div></a>
+            </div>
+        </div>
+        <hr/><br/>
+        <h3>Extra Itens:</h3>
+        <div class="card-group">
+            <div class="card text-white bg-dark border-white mb-3 p-2">
+                <a href="Pages/Extra_Itens/zp_elemental.html" class="text-white text-decoration-none"><img src="Imagens/elemental_banner.png" class="card-img-top" alt="Thanos">
+                <div class="card-body">
+                    <h5 class="card-title">[ZP] Extra: Elemental Fire & Ice</h5>
+                    <p class="card-text">Burn and Frost zombies using the dual elemental</p>
+                </div></a>
+            </div>
+            <div class="card text-white bg-dark border-white mb-3 p-2">
+                <a href="Pages/Extra_Itens/zp_uganda_knuckles_gun.html" class="text-white text-decoration-none"><img src="Imagens/uganda_banner.png" class="card-img-top" alt="Pain">
+                <div class="card-body">
+                    <h5 class="card-title">[ZP] Extra: Uganda Knuckles Gun</h5>
+                    <p class="card-text">Basing in Sonic Games Memes</p>
+                </div></a>
+            </div>
+            <div class="card text-white bg-dark border-white mb-3 p-2">
+                <a href="Pages/Extra_Itens/zp_paintball_gun.html" class="text-white text-decoration-none"><img src="Imagens/banner_site_scrash.gif" class="card-img-top" alt="Thanos">
+                <div class="card-body">
+                    <h5 class="card-title">[ZP] Extra: Paintball Gun </h5>
+                    <p class="card-text">Simple Weapon for kill Zombies</p>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div w3-include-html="list_plugins.html"></div> 
+
+    <!-- Footer Bar -->
+    <footer class="container-xxl py-2 bg-dark mt-3 p-5 pt-4 text-start">
+        <div class="row align-items-center">
+            <div class="col-1">
+                <small class="d-block mb-3 text-muted">
+                    <img src="Imagens/scrash.gif" class="mb-1" height="70">              
+                </small>
+                
+            </div>
+            <div class="col-7" style="padding-left: 3%;">
+                <small class="d-block mb-3 text-muted">
+                    &copy; 2017–2021<br/>
+                    Website Developed by: Perfect Scrash                    
+                </small>
+            </div>
+            <div class="col-4">
+                <h5>Contact:</h5>
+                <ul class="list-unstyled text-small text-muted">
+                <li><img src="Imagens/discord_icon.png" style="border-radius: 5px;" alt="Discord" height="24"> - Perfect Scrash#1400</li>
+                <li><a class="text-decoration-none text-muted" href="https://steamcommunity.com/id/perfectscrash" target="_blank"><img src="Imagens/Steam-Logo.png" alt="Allied Profile" height="24"> - [P]erfect [S]crash</a></li>
+                <li><img src="Imagens/skype_logo.png" alt="Skype" height="24"> - perfect.scrash</li>
+                <li><a class="text-decoration-none text-muted" href="https://forums.alliedmods.net/member.php?u=236184" target="_blank"><img src="Imagens/allied_logo.png" alt="Allied Profile" height="24"> - Allied Profile</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Contact Dialog Box -->
+    <div class="modal fade" id="Modal_Contact" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h5 class="modal-title">Contact</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled text-small">
+                <li><img src="Imagens/discord_icon.png" style="border-radius: 5px;" alt="Discord" height="24"> - Perfect Scrash#1400</li>
+                <li><a class="text-decoration-none text-white" href="https://steamcommunity.com/id/perfectscrash" target="_blank"><img src="Imagens/Steam-Logo.png" alt="Allied Profile" height="24"> - [P]erfect [S]crash</a></li>
+                <li><img src="Imagens/skype_logo.png" alt="Skype" height="24"> - perfect.scrash</li>
+                <li><a class="text-decoration-none text-white" href="https://forums.alliedmods.net/member.php?u=236184" target="_blank"><img src="Imagens/allied_logo.png" alt="Allied Profile" height="24"> - Allied Profile</a></li>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script>
+    includeHTML();
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    </body>
+</html>
