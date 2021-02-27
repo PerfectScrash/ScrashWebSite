@@ -47,11 +47,7 @@
 
     <script>ler_pagina();</script>
 
-    <script>load('footer.html');</script>
-
     <div data-include="footer"></div>    
-    
-
     
     <!-- Contact Dialog Box -->
     <div class="modal fade" id="Modal_Contact" tabindex="-1">
@@ -111,11 +107,11 @@
         });
         $(document).ready(function(){
             $("#Download_Button").click(function(){
-                $("#Modal_Donate").modal();
+                $("#Modal_Donate").modal("show");
             });
 
             $("#Download_Button_2").click(function(){
-                $("#Modal_Donate").modal();
+                $("#Modal_Donate").modal("show");
             });
         }); 
     </script> 
