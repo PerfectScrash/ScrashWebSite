@@ -26,7 +26,7 @@
                 })(window.location.search.substr(1).split('&'));
         
                 var varGet1 = qs["pag_dir"];
-                if(varGet1 != "" && varGet1 != " ") {
+                if(varGet1 != "" && varGet1 != " " && varGet1 != "undefined" && varGet1 != null) {
                     document.write("<div data-include='" + varGet1 + "'></div>")
                 }
                 else document.write("<div data-include='home'></div>")
