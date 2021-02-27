@@ -30,6 +30,8 @@
                     document.write("<div data-include='" + varGet1 + "'></div>")
                 }
                 else document.write("<div data-include='home'></div>")
+
+                document.write("<p class='text-white'>" + varGet1 + "</p>")
             }
         </script>
     
@@ -42,8 +44,8 @@
     </head>
 
     <body class="text-center text-light bg-image" style="background-image: url('Imagens/background_site.jpg'); background-size: cover;">
-    
-    <div data-include="nav_bar"></div>
+
+    <div data-include="nav_bar" class="mb-3"></div>
     <script>ler_pagina();</script>
     <div data-include="footer"></div>    
     
