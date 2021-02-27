@@ -71,14 +71,9 @@
 </div>
 
 <script>
-    function ShowDonateBox() {
-        /*var Mod_Donate = new bootstrap.Modal(document.getElementById('#Modal_Donate'), {
-        focus: true
+    $(document).ready(function(){
+        $("#Download_Button").click(function(){
+            $("#Modal_Donate").modal();
         });
-        Mod_Donate.show();*/
-
-        var Mod_Donate = document.getElementById('#Modal_Donate')
-        Mod_Donate.addEventListener('show.bs.modal', function (event) {
-        })
-    }
+    });
 </script>
