@@ -9,7 +9,7 @@
         </div>
         <div class="col-7" style="padding-left: 3%;">
             <small class="d-block mb-3 text-muted">
-                &copy; 2021<br/>
+                &copy; 2017–2021<br/>
                 Website Developed by: Perfect Scrash                    
             </small>
         </div>
@@ -28,7 +28,7 @@
 
 <!-- Contact Dialog Box -->
 <div class="modal fade" id="Modal_Contact" tabindex="-1">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content bg-dark">
         <div class="modal-header">
           <h5 class="modal-title">Contact</h5>
@@ -47,3 +47,32 @@
       </div>
     </div>
 </div>
+
+<div class="modal fade" id="Modal_Donate" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h3 class="modal-title">Thank you for download</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="Imagens/scrash.gif" class="w-75" alt="Donate">
+
+            <p>Did you like it this gameplay?<br/>
+               You can encourage my work by making a donation.</p>
+
+        </div>
+        <div class="modal-footer">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8RJPHR3T8P6Y" class="btn btn-primary" target="_blank">Donate</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    function ShowDonateBox() {
+        var Mod_Donate = new bootstrap.Modal(document.getElementById('Modal_Donate'), options);
+        Mod_Donate.show();
+    }
+</script>
