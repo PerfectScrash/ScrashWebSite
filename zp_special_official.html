@@ -1,4 +1,4 @@
-<div class="container bg-dark p-3" style="border-radius: 20px;border: 1px;border-color: yellow;border-style: double;">
+<div class="container bg-dark p-3 text-start" style="border-radius: 20px;border: 1px;border-color: yellow;border-style: double;">
 	<a href="https://github.com/PerfectScrash/Zombie-Plague-Special/tree/master/Zombie%20Plague%20Special%204.4%20(Beta)">
 	<img src="Imagens/zpsp_banner_site.png" class="rounded-pill w-100" alt="Zombie Plague Special">	
 	</a>
@@ -53,7 +53,7 @@
 	- Open plugins.ini in configs directory (c:/.../addons/amxmodx/configs)<br>
 	- And copy the plugin name and enable the main plugin, zombie classes and amx_settings, example: <br></p>
 
-	<div style="margin-bottom:2px">Code:
+	<div class="mb-2">Code:
 <pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: min-content; text-align: left; overflow: auto">
 amx_settings_api.amxx
 zombie_plague_special_new.amxx
@@ -74,7 +74,7 @@ zpsp_zombie_classes.amxx</pre></div>
 	<h3>Adding Escape Map Support:</h3>
 	<p>Maps with have "ze_" prefix are support enable automaticaly. <br>
 	If your zombie escape map not have "ze_" prefix like "zm_boatescape" open "zombie_plague_special.ini", find and add:</p>
-	<div  style="margin-bottom:2px">Code:
+	<div class="mb-2">Code:
 <pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: min-content; text-align: left; overflow: auto">
 [Escape Maps] (Add Zombie Escape Maps that not have "ze_" prefix like 'zm_boatescape')
 ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)</pre>
@@ -92,7 +92,7 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 	<b>Perfect Scrash:</b> For Adding New Modes, fix and Optimizing Code</p>
 
 	<h3>Change Log:</h3>
-	<div  style="margin-bottom:2px">Change Log:
+	<div class="mb-2">Change Log:
 <pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: auto; text-align: left; overflow: auto">
 * 1.0:
 - First Post
@@ -104,11 +104,13 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 - Removed .ini of extra itens and zombie classes
 - Added p_  model for Special Humans
 - Added Wesker &amp; Bombardier Mod
+
 * 2.0 Fix:
 - Fixed Berserker Knife Model
 * 2.1:
 - Fixed Ambiences Sounds
 - Added native zp_get_last_mode()
+
 * 2.2:
 - Added Spy Mode
 - Re-added Dragon Mode
@@ -116,28 +118,33 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 - Optimized code
 - Fixed Small Bug off Predator's Power when Handle Models Separate is enable
 - Fixed Predator's Glow cvar
+
 * 2.3:
 - Added New Natives
 - Fixed Small bug on Open zombie class after infection
 - Added Bot Suppot of Dragon Skills (Unleash Fire &amp; Ice Only not for Fly)
 - Etc
+
 * 2.4:
 - Added New Natives
 - Fixed Bot Extra Item Support
 - Readded .ini for zombie classes and extra itens (This file is auto create)
 - Added Some Cvars
 - Etc.
+
 * 2.4.1:
 - Optimized Code
 - Added cvar "zp_choose_zclass_instantanly"
 - You can turn off the special class (Nemesis/Survivor/Sniper/Etc..) you want if you have not liked
 - Added native lost on include (zp_override_user_model)
 - Etc
+
 * 2.5:
 - Optimized Code
 - Added .ini file of Custom Game Modes
 - Added Bot Suppot for Bombardier Grenade
 - Etc
+
 * 3.0:
 - Optimized Code
 - Fixed Fog
@@ -147,18 +154,21 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 
 * 3.0 Fix:
 - Fixed Make Custom Zombie Special Menu
+
 * 3.1:
 - Fixed AnthRax Hud style
 - Fixed Bug of Predator and Spy not turn invisible to those who play in Software Mode
 - Fixed Choose Zombie Class instantanly
 - Fixed Some Error Logs
 - Added Native (zp_get_special_class_name)
+
 * 3.2:
 - Fixed Choose Zombie Class instantanly when frozen
 - Fixed Zombie class save when have some characters
 - Fixed zombie pain free
 - Added Some Natives (zp_get_special_class_id/zp_get_zombie_class_realname)
 - Fixed custom special class's rounds
+
 * 3.3:
 - Added 4.3 fix 5a's all contains and fixes
 
@@ -168,6 +178,7 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 - Added Cvars for turn on/off frozing Nemesis/Assassin/Predator/Bombardier/Dragon
 - Added Configuration for turn on/off frozing Custom Special Zombies
 - Removed cvar "zp_random_weapons" because are changed for "zp_random_primary" and "zp_random_secondary" (Like ZP 5.0)
+
 * 3.5:
 - Added Zombie Escape Map Suport
 - Fix Bug on Custom Special Classes Game modes not start when have one people on server
@@ -176,9 +187,11 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 - Fixed Small Bug on precache ambience sounds
 - Fixed Bombardier Grenade when infection bomb is disable
 - Added p_ &amp; w_ model for Grenades
+
 * 3.5 Fix:
 - Removed Block use button before round begins (Reason: Some maps have button for open door on start)
 - Fixed Native zp_get_user_next_class
+
 * 4.0:
 - Fixed T Model Precache
 - Added Configuration for enable/disable Special Classes (Custom and Normal)
@@ -294,5 +307,5 @@ ZOMBIE ESCAPE SUPPORT MAPS = (Add Zombie Escapes maps without "ze_" prefix here)
 </pre>
 	</div><!-- Fim do changelog -->
 
-	<a href="Downloads/Zombie%20Plague%20Special%204.4%20(Beta).zip"><div class="botao_normal">Download Here</div></a>
+	<a href="Downloads/Zombie%20Plague%20Special%204.4%20(Beta).zip" class="btn btn-primary btn-lg">Download Here</a>
 </div>
