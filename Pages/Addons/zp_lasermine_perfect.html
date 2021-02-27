@@ -1,44 +1,25 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<title>[ZP] Addon: Lasermine Perfect</title>
-		<meta charset="utf-8">
-		<!-- <link rel="shortcut icon" href="../../Imagens/icon_113456469774756816e07b1570b0a1f4.ico"/> -->
-		<link rel="stylesheet" type="text/css" href="../../estilo.css">
-	</head>
-	<body>
-		<h1>Best of Scrash<br/><img style="margin-top: 1%;" src="../../Imagens/scrash.gif" width="400"></h1> 
-		<div class="menu">
-			<h3><a href="../../index.html">Home</a> | 
-				<a href="../../zp_special_official.html">Zombie Plague Special</a> | 
-				<a href="../../dbm_official.html">Dragon Ball Mod</a> | 
-				<a href="../../list_plugins.html">Plugin List</a> | 
-				<a href="../../contact.html">Contact</a></h3>
-		</div>
-		<br/>
-		<div class="corpo">      
-			<h2>[ZP] Addon: Lasermine Perfect 4.3</h2>
-			<p class="center">
-				<a href="https://i.imgur.com/ONZYTA0.gif">
-					<img src="https://i.imgur.com/ONZYTA0.gif" width="640">
-				</a>
-			</p>	
-			<h3>Description:</h3>
-			<p>
-				With this Lasermine you can custonomize any way you want using the menu (You can open with a bind or writing in say /lm);<br/>
-				You can change Glow/Line Color;<br/>
-				You can change Model that you want;<br/>
-				You can change Lasermine Skin;<br/>
-				You can change Line Sprite;<br/>
-				And More...
-			</p>
+<div class="container bg-dark p-5 text-start" style="border-radius: 20px;border: 1px;border-color: yellow;border-style: double;">
+	<h2>[ZP] Addon: Lasermine Perfect</h2>
+	<a href="Imagens/lasermine_banner.png">
+		<img src="Imagens/lasermine_banner.png" class="w-100 mb-3 mt-3" alt="[ZP] Lasermine Perfect" style="border-radius: 50px;border: 2px;border-color: yellow;border-style: double;">	
+	</a>
+	
+	<h3>Description:</h3>
+	<p>
+		With this Lasermine you can custonomize any way you want using the menu (You can open with a bind or writing in say /lm);<br/>
+		You can change Glow/Line Color;<br/>
+		You can change Model that you want;<br/>
+		You can change Lasermine Skin;<br/>
+		You can change Line Sprite;<br/>
+		And More...
+	</p>
 
-			<h3>Requeriments:</h3>
-			<p>Any Zombie Plague Version</a></p>
+	<h3>Requeriments:</h3>
+	<p>Any Zombie Plague Version</a></p>
 
-			<h3>Cvars:</h3>
-			<div class="codigo" style="margin-bottom:2px">Cvars:
-			<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 300px; text-align: left; overflow: auto">
+	<h3>Cvars:</h3>
+	<div class="card card-body border-info text-white bg-dark mb-2 mt-2">Cvars:
+	<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 300px; text-align: left; overflow: auto">
 // Original Lasermine Cvars
 zp_ltm "1"			; Lasermine ON/OFF (1 / 0)
 zp_ltm_admin_only "0"		; Lasermine access level (0 is all, 1 is admin only)
@@ -106,139 +87,164 @@ zp_ltm_enable_in_bombardier "1" // Allowed Lasermine in Bombardier Mode
 zp_ltm_enable_in_spy "1" // Allowed Lasermine in Spy Mode
 zp_ltm_enable_in_dragon "1" // Allowed Lasermine in Dragon Mode	</pre></div>
 
-			<h3>Configuring and Install:</h3>
-			<p>Fist at all you need edit .sma file to configure for your main plugin and set to a extra item mode<br/><br/>
+	<h3>Configuring and Install:</h3>
+	<p>Fist at all you need edit .sma file to configure for your main plugin and set to a extra item mode<br/><br/>
 
-			<b>Example:</b><br/><br/>
+	<b>Example:</b><br/><br/>
 
-			I use Zombie Plague Special and i want to set the lasermine for zp special only and in a extra item mode. I needed to make this:<br/>
-			</p>
+	I use Zombie Plague Special and i want to set the lasermine for zp special only and in a extra item mode. I needed to make this:<br/>
+	</p>
 
-			<div class="codigo" style="margin-bottom:2px">
-			<b>Find:</b>
-			<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 170px; text-align: left; overflow: auto">
-// Uncomment your Main Plugin Version
-#define ZP_43 // Zombie Plague 4.3
-//#define ZP_50 // Zombie Plague 5.0
-//#define ZP_ADVANCE // Zombie Plague Advance
-//#define ZP_SPECIAL // Zombie Plague Special
+	<b>Find:</b>
+	<div class="card card-body border-info text-white bg-dark mb-3 mt-2">
+		// Uncomment your Main Plugin Version
+		#define ZP_43 // Zombie Plague 4.3
+		//#define ZP_50 // Zombie Plague 5.0
+		//#define ZP_ADVANCE // Zombie Plague Advance
+		//#define ZP_SPECIAL // Zombie Plague Special
+		<br/>
+		<br/>
+		// You want a lasermine like a extra item? 
+		// If yes uncomment "#define EXTRA_ITEM_VERSION"
+		//#define EXTRA_ITEM_VERSION
+		#define LM_COST 10 // Price of lasermine in a extra item menu
+	</div>
 
+	<b>Change To:</b>
+	<div class="card card-body border-info text-white bg-dark mb-3 mt-2">
+		// Uncomment your Main Plugin Version
+		//#define ZP_43 // Zombie Plague 4.3
+		//#define ZP_50 // Zombie Plague 5.0
+		//#define ZP_ADVANCE // Zombie Plague Advance
+		#define ZP_SPECIAL // Zombie Plague Special
+		<br/>
+		<br/>
+		// You want a lasermine like a extra item? 
+		// If yes uncomment "#define EXTRA_ITEM_VERSION"
+		#define EXTRA_ITEM_VERSION
+		#define LM_COST 10 // Price of lasermine in a extra item menu
+	</div>
 
-// You want a lasermine like a extra item? 
-// If yes uncomment "#define EXTRA_ITEM_VERSION"
-//#define EXTRA_ITEM_VERSION
-#define LM_COST 10 // Price of lasermine in a extra item menu</pre><br/>
-			<b>Change To:</b>
-			<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 170px; text-align: left; overflow: auto">
-// Uncomment your Main Plugin Version
-//#define ZP_43 // Zombie Plague 4.3
-//#define ZP_50 // Zombie Plague 5.0
-//#define ZP_ADVANCE // Zombie Plague Advance
-#define ZP_SPECIAL // Zombie Plague Special
+	<p>Now i compile the plugin and install.<br/><br/>
 
+	How to Install????<br/><br/>
 
-// You want a lasermine like a extra item? 
-// If yes uncomment "#define EXTRA_ITEM_VERSION"
-#define EXTRA_ITEM_VERSION
-#define LM_COST 10 // Price of lasermine in a extra item menu</pre></div>
+	<b>Put:</b>
+	<ul>
+	<li>.amxx file in plugins directory (cstrike/addons/amxmodx/plugins)</li>
+	<li>.cfg in configs directory (cstrike/addons/amxmodx/configs)</li>
+	<li>.txt in lang directory (cstrike/addons/amxmodx/data/lang)</li>
+	<li>Any resources directory (models, sprites and sound) in a cstrike directory</li>
+	</ul>
+	</p>
 
-			<p>Now i compile the plugin and install.<br/><br/>
-
-			How to Install????<br/><br/>
-
-			<b>Put:</b><br/>
-			* .amxx file in plugins directory (cstrike/addons/amxmodx/plugins)<br/>
-			* .cfg in configs directory (cstrike/addons/amxmodx/configs)<br/>
-			* .txt in lang directory (cstrike/addons/amxmodx/data/lang)<br/>
-			* Any resources directory (models, sprites and sound) in a cstrike directory<br/>
-			</p>
-
-			<h3>Change Log:</h3>
-			<div class="codigo" style="margin-bottom:2px">Change Log:
-			<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 300px; text-align: left; overflow: auto">
+	<h3>Change Log:</h3>
+	<div class="card card-body border-info text-white bg-dark mb-4 mt-2">Change Log:
+	<pre class="alt2" dir="ltr" style="margin: 0px;padding: 6px;border: 1px inset;width: auto; height: 300px; text-align: left; overflow: auto">
 * 1.0:
-	- First Version.
+- First Version.
+
 * 1.1:
-	- Fixed bug that Lasermine Dont Works.
-	- Show Lasermine Owner Name.
-	- Make Random Color Of Glow/Line in raibom style (When Enable).
+- Fixed bug that Lasermine Dont Works.
+- Show Lasermine Owner Name.
+- Make Random Color Of Glow/Line in raibom style (When Enable).
+
 * 1.2:
-	- Fixed Bug: When Player Die and Lasermine dont removed
-	- Fixed Bug: Cant Plant If your Lasermine destroyed one time
+- Fixed Bug: When Player Die and Lasermine dont removed
+- Fixed Bug: Cant Plant If your Lasermine destroyed one time
+
 * 1.3:
-	- Added: Solid Mode
+- Added: Solid Mode
+
 * 1.4:
-	- Fixed Some Bugs
-	- Added Natives and Forwards
+- Fixed Some Bugs
+- Added Natives and Forwards
+
 * 2.0:
-	- Fixed Some Error Logs.
+- Fixed Some Error Logs.
+
 * 2.1:
-	- Fixed Some Bugs.
-	- Added More Cvars for Easily Config.
+- Fixed Some Bugs.
+- Added More Cvars for Easily Config.
+
 * 2.2:
-	- Fixed More Error Logs
-	- Added Lasermine Main Menu for Personal Configuration
+- Fixed More Error Logs
+- Added Lasermine Main Menu for Personal Configuration
+
 * 2.3:
-	- Fixed bug when R,G,B are equal to 0 for make line invisible
-	- Fixed bug when some time radius crashes the server
-	- New Main Menu Options (Choose Sprites/Models)
+- Fixed bug when R,G,B are equal to 0 for make line invisible
+- Fixed bug when some time radius crashes the server
+- New Main Menu Options (Choose Sprites/Models)
+
 * 3.0:
-	- Added More Models
-	- Added Lang Support
+- Added More Models
+- Added Lang Support
+
 * 3.1:
-	- Added More Sprites
+- Added More Sprites
+
 * 3.2/3.3:
-	- Fixed More Error Logs
-	- Added More Cvars for Easily Config.
+- Fixed More Error Logs
+- Added More Cvars for Easily Config.
+
 * 3.4:
-	- Fixed More Error Logs
-	- Added Model "Perfect Lasermine"
+- Fixed More Error Logs
+- Added Model "Perfect Lasermine"
+
 * 4.0:
-	- Fixed Some error logs
-	- Fixed Small bug when plant lasermine and lasermine does not stay in the wall
-	- Added one Cvar for define the max distance for remove the Lasermine
-	- Added mode for lasermine can kill entities (Like Oberon Boss and Others)
+- Fixed Some error logs
+- Fixed Small bug when plant lasermine and lasermine does not stay in the wall
+- Added one Cvar for define the max distance for remove the Lasermine
+- Added mode for lasermine can kill entities (Like Oberon Boss and Others)
+
 * 4.1:
-	- Improved Code
-	- Fixed Lang
+- Improved Code
+- Fixed Lang
+
 * 4.2:
-	- Added more Models/Sprites for Lasermine
-	- Added Realistic Detail of Lasermine (Cut the laser when it passes over)
-	- End of Style "Rainbow" for Reduce Lag
-	- Fixed Native/Cvar Error Logs
-	- Improved Code
-	- Fixed Forward "zp_fw_lm_planted_pre"
-	- Removed Native "zp_get_lasermine_id"
-	- Removed CZ Tutor Print (Because some steam players have bug when show tutor in screen)
+- Added more Models/Sprites for Lasermine
+- Added Realistic Detail of Lasermine (Cut the laser when it passes over)
+- End of Style "Rainbow" for Reduce Lag
+- Fixed Native/Cvar Error Logs
+- Improved Code
+- Fixed Forward "zp_fw_lm_planted_pre"
+- Removed Native "zp_get_lasermine_id"
+- Removed CZ Tutor Print (Because some steam players have bug when show tutor in screen)
+
 * 4.3:
-	- Fixed Error Log
-	- Fixed Neon Color Line Sprite (Color are rights. Now white color are white color even and not yellow color)
-	- Improved Dotted Line Sprite (More Dotts are appears now)
-	- Added cvars for enable lasermine in certain gamemode.
-	- Added Skin System
-	- Removed Red Eye Model
-	- Alien 2 (Dark Alien) are now skin of Alien 1
-	- Added Eyeball and Infinity Gauntlet LM Model
-	- Now are 9 models in 1 mdl (Need Update Resources)
-	- Some with Sprites - 10 sprites in 1 .spr (Need Update Resources)
-	- Added Sprites: Heartbeat, Love Heart, Amazing Stars, Skull
-	- Added Remove Glow Option (In choose glow menu)
-	- Updated Lang
-	- Added Extra Item Configuration 
-	- Added ZP Version Configuration
-	- Added Many Cvars (See the ltm_cvars.cfg)
-	- Added Lasermine Mode (Simple Explode or Normal lasermine)	
-			</pre></div>
+- Fixed Error Log
+- Fixed Neon Color Line Sprite (Color are rights. Now white color are white color even and not yellow color)
+- Improved Dotted Line Sprite (More Dotts are appears now)
+- Added cvars for enable lasermine in certain gamemode.
+- Added Skin System
+- Removed Red Eye Model
+- Alien 2 (Dark Alien) are now skin of Alien 1
+- Added Eyeball and Infinity Gauntlet LM Model
+- Now are 9 models in 1 mdl (Need Update Resources)
+- Some with Sprites - 10 sprites in 1 .spr (Need Update Resources)
+- Added Sprites: Heartbeat, Love Heart, Amazing Stars, Skull
+- Added Remove Glow Option (In choose glow menu)
+- Updated Lang
+- Added Extra Item Configuration 
+- Added ZP Version Configuration
+- Added Many Cvars (See the ltm_cvars.cfg)
+- Added Lasermine Mode (Simple Explode or Normal lasermine)	
+	</pre></div>
 
-			<h3>Line Sprite List:</h3>
-			<img src="https://i.imgur.com/VBE2ahp.png">
+	<h3>Line Sprite List:</h3>
+	<img src="https://i.imgur.com/VBE2ahp.png">
 
-			<h3>Video:</h3>
-			<embed src="https://www.youtube.com/embed/pw3YgYikFPo" width="640" height="400">
+	<h3>Video:</h3>
+	<div class="ratio ratio-16x9 mb-2"><embed src="https://www.youtube.com/embed/pw3YgYikFPo"></div>
 
-			<a href="../../Downloads/ZP Lasermine Perfect 4.3.zip"><div class="botao_normal">Download Here</div></a>
+	<br/><hr/><br/>
+	<a href="Downloads/ZP Lasermine Perfect 4.3.zip" class="btn btn-primary btn-lg mt-3 text-center" onclick="$('#Modal_Donate').modal('show');">
+		Download Here
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+			<path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+			<path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+		</svg>
+	</a>
 
-		</div>
-		<a href="../../list_plugins.html"><div class="botao_voltar"><- Back</div></a>
-	</body>
-</html>
+</div>
+
