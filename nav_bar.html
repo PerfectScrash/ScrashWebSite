@@ -13,23 +13,72 @@
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="MainPlugins_Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onmouseover="$('#MainPlugins_Dropdown').dropdown('show');" onmouseout="$('#MainPlugins_Dropdown').dropdown('hide');">
-                Main Plugins
+
+            <li class="nav-item dropdown" onmouseover="$('#PluginList_Dropdown').dropdown('show');" onmouseout="$('#PluginList_Dropdown').dropdown('hide');">
+                <a class="nav-link dropdown-toggle" href="#" id="PluginList_Dropdown" onclick="window.location.href='index.html?pag_dir=list_plugins';">
+                Plugin List
                 </a>
-                <ul class="dropdown-menu navbar-dark" aria-labelledby="MainPlugins_Dropdown">
+                <ul class="dropdown-menu dropdown-menu-dark navbar-dark" aria-labelledby="PluginList_Dropdown">
+                
+                <li><span class="dropdown-item-text text-muted">Main Plugins:</span></li>
                 <li><a class="dropdown-item" href="index.html?pag_dir=zp_special_official">Zombie Plague Special</a></li>
                 <li><a class="dropdown-item" href="index.html?pag_dir=dbm_official">Dragon Ball Mod</a></li>
-                <!--<li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                <li><hr class="dropdown-divider"></li>
+                
+                <li><span class="dropdown-item-text text-muted">For ZP Special:</span></li>
+                <li class="dropdown-item dropdown-submenu">
+                    <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Special Classes</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+
+                        <li class="dropdown-item dropdown-submenu">
+                            <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Special Humans</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_pain">Pain/Nagato</a></li>
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_plasma">Plasma</a></li>
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_chucknorris">Chuck Norris</a></li>
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_xiter">Xiter</a></li>
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_priest">Priest</a></li>
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_grenadier">Grenadier</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-item dropdown-submenu">
+                            <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Special Zombies</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_thanos">Thanos</a></li>
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_raptor">Raptor</a></li>
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_dog">Dog</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-item dropdown-submenu">
+                            <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Both Teams</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_sonic_shadow">Sonic & Shadow</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown-item dropdown-submenu">
+                    <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Extra Itens</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Extra_Itens/zp_uganda_knuckles_gun">Uganda Knuckles Gun</a></li>
+                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Extra_Itens/zp_elemental">Elemental (Fire & Ice)</a></li>
+                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Extra_Itens/zp_paintball_gun">Paintball Gun</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-item dropdown-submenu">
+                    <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Gameplay Additions</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Addons/zp_lasermine_perfect">Lasermine Perfect 4.3</a></li>
+                    </ul>
+                </li>
                 </ul>
             </li>
             <li class="nav-item">
-                <!-- <a class="nav-link" href="list_plugins">Plugin List</a> -->
-                <a class="nav-link" href="index.html?pag_dir=list_plugins">Plugin List</a>
+                <a class="nav-link" data-bs-toggle="modal" href="#Modal_Contact">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="modal" href="#Modal_Contact">Contact</a>
+                <a class="nav-link" aria-current="page" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8RJPHR3T8P6Y">Donate</a>
             </li>
             </ul>
             <span class="navbar-text">
