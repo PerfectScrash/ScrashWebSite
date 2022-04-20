@@ -1,6 +1,7 @@
 .dropdown-submenu {
     position: relative;
 }
+
 .dropdown-submenu>.dropdown-menu {
     top: 0;
     left: 100%;
@@ -14,6 +15,7 @@
 .dropdown-submenu:hover>.dropdown-menu {
     display: block;
 }
+
 .dropdown-submenu>a:after {
     display: block;
     content: " ";
@@ -42,4 +44,82 @@
     -webkit-border-radius: 6px 0 6px 6px;
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
+}
+
+.principal {
+    border-radius: 20px;
+    border: 1px;
+    border-color: yellow;
+    border-style: double;
+}
+
+body {
+    background-image: url('Imagens/background_site.jpg');
+    background-size: cover;
+}
+
+.card-group-row {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row !important;
+}
+
+.estilo_carrosel {
+    border-radius: 10px;
+    border: 2px;
+    border-color: yellow;
+    border-style: double;
+    text-decoration: none !important;
+}
+
+.carousel {
+    background-color: #000;
+    border-radius: 15px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+.carousel-indicators {
+    margin-bottom: 1.75rem;
+}
+.footer_mobile_check {
+    grid-column-gap: 1rem;
+}
+@media only screen and (max-width: 500px) {
+    .footer_mobile_check {
+        flex-direction: column-reverse !important;
+        grid-row-gap: 2rem;
+        grid-column-gap: 0rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .card-group-row {
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column !important;
+    }
+    
+    .carousel-caption {
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        border-radius: 0px;
+        position: initial;
+        border-top: solid;
+        border-width: thin;
+    }
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+        margin: 5%;
+        margin-top: 2%;
+    }
+    .carousel-caption p {
+        font-size: 0.9rem;
+        margin: 5%;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0.2rem;
+    }
 }
