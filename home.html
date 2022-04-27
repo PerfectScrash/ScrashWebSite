@@ -1,13 +1,8 @@
 <div id="carrosel_primario" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+    <div class="carousel-indicators" id="carrosel_home_slides">
         <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carrosel_primario" data-bs-slide-to="5" aria-label="Slide 6"></button>
     </div>
-    <div class="carousel-inner estilo_carrosel" >
+    <div class="carousel-inner estilo_carrosel" id="carrosel_home_div">
         <div class="carousel-item active" data-bs-interval="5000">
             <img src="Imagens/banner_site_scrash.gif" class="d-block w-100" alt="Welcome to Scrash's Website">
             <div class="carousel-caption">
@@ -15,41 +10,7 @@
                 <p>Here you find the best plugins of Perfect Scrash</p>
             </div>
         </div>
-        <div class="carousel-item" data-bs-interval="5000">
-            <a class="text-decoration-none" href="index.html?pag_dir=zp_special_official"><img src="Imagens/zpsp_banner_site.png" class="d-block w-100" alt="Zombie Plague Special">
-            <div class="carousel-caption">
-                <h5>Zombie Plague Special 4.5</h5>
-                <p>See the latest version of this Zombie Plague</p>
-            </div></a>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-            <a class="text-decoration-none" href="index.html?pag_dir=Pages/Addons/zpsp_xp_system"><img src="Imagens/xpsystem_gif.gif" class="d-block w-100" alt="[ZPSp] Xp System">
-            <div class="carousel-caption">
-                <h5>[ZPSp] Addon: XP System</h5>
-                <p>Turn your Zombie Plague Special 4.5 into Zombie Plague XP</p>
-            </div></a>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-            <a class="text-decoration-none" href="index.html?pag_dir=dbm_official"><img src="Imagens/dbm_banner_site.png" class="d-block w-100" alt="Dragon Ball Mod">
-            <div class="carousel-caption">
-                <h5>Dragon Ball Mod</h5>
-                <p>See this greatest mod for Amx Mod X</p>
-            </div></a>
-        </div>
-        <div class="carousel-item" data-bs-interval="5000">
-            <a class="text-decoration-none" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_thanos"><img src="Imagens/thanos_Banner.png" class="d-block w-100" alt="[ZPSp] Special Class: Thanos">
-            <div class="carousel-caption">
-                <h5>[ZPSp] Special Class: Thanos</h5>
-                <p>See this greatest gamemod maked for Zombie Plague Special</p>
-            </div></a>
-        </div>
-        <div class="carousel-item">
-            <a class="text-decoration-none" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A8RJPHR3T8P6Y"><img src="Imagens/banner_site_scrash.gif" class="d-block w-100" alt="Donate">
-            <div class="carousel-caption">
-                <h5>Donate:</h5>
-                <p>Do you like the some plugin and want to encourage my work?</p>
-            </div></a>
-        </div>
+        <script>Get_Carrosel_Home();</script>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carrosel_primario"  data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
