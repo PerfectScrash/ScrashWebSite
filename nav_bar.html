@@ -21,8 +21,12 @@
                 <ul class="dropdown-menu dropdown-menu-dark navbar-dark" aria-labelledby="PluginList_Dropdown">
                 
                 <li><span class="dropdown-item-text text-muted">Main Plugins:</span></li>
-                <li><a class="dropdown-item" href="index.html?pag_dir=zp_special_official">Zombie Plague Special</a></li>
-                <li><a class="dropdown-item" href="index.html?pag_dir=dbm_official">Dragon Ball Mod</a></li>
+                <li class="dropdown-item dropdown-submenu">
+                    <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Mods</a>
+                    <ul class="dropdown-menu dropdown-menu-dark" id="pl_main">
+                    </ul>
+                </li>
+
                 <li><hr class="dropdown-divider"></li>
                 
                 <li><span class="dropdown-item-text text-muted">For ZP Special:</span></li>
@@ -32,55 +36,37 @@
 
                         <li class="dropdown-item dropdown-submenu">
                             <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Special Humans</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_antidoter">Antidoter</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_pain">Pain/Nagato</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_plasma">Plasma</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_chucknorris">Chuck Norris</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_xiter">Xiter</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_priest">Priest</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_grenadier">Grenadier</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark" id="zpsp_sp_h">
                             </ul>
                         </li>
 
                         <li class="dropdown-item dropdown-submenu">
                             <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Special Zombies</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_thanos">Thanos</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_raptor">Raptor</a></li>
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_dog">Dog</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark" id="zpsp_sp_z">
                             </ul>
                         </li>
                         <li class="dropdown-item dropdown-submenu">
                             <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Both Teams</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Special_Classes/zpsp_spc_sonic_shadow">Sonic & Shadow</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark" id="zpsp_sp_all">
                             </ul>
                         </li>
                     </ul>
                 </li>
                 <li class="dropdown-item dropdown-submenu">
                     <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Extra Itens</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Extra_Itens/zp_uganda_knuckles_gun">Uganda Knuckles Gun</a></li>
-                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Extra_Itens/zp_elemental">Elemental (Fire & Ice)</a></li>
-                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Extra_Itens/zp_paintball_gun">Paintball Gun</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark" id="zpsp_extra_item">
                     </ul>
                 </li>
                 <li class="dropdown-item dropdown-submenu">
                     <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Gameplay Additions</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Addons/zpsp_xp_system">XP System</a></li>
-                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Addons/zp_lasermine_perfect">Lasermine Perfect 4.3</a></li>
-                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Addons/zpsp_addon_cplayer_model">Custom Player Model</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark" id="zpsp_addon">
                     </ul>
                 </li>
 				<li><hr class="dropdown-divider"></li>
                 <li><span class="dropdown-item-text text-muted">Misc/Others:</span></li>
                 <li class="dropdown-item dropdown-submenu">
                     <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Map Scripts</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Addons/map_script_5em1">(Map Scriping) zm_5em1_scrash</a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark" id="map_script">
                     </ul>
                 </li>
                 </ul>
@@ -89,10 +75,14 @@
                 <a class="nav-link dropdown-toggle" href="#" id="Private_plugins_dropdown">
                 Private Plugins
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark navbar-dark" aria-labelledby="Private_plugins_dropdown">
+                <ul class="dropdown-menu dropdown-menu-dark navbar-dark"  aria-labelledby="Private_plugins_dropdown">
                 
-                <li><span class="dropdown-item-text text-muted">Full Addons:</span></li>
-                <li><a class="dropdown-item" href="index.html?pag_dir=Pages/Private/scrash_ctf">Scrash's Capture the flag</a></li>
+                <li><span class="dropdown-item-text text-muted">Main Privates:</span></li>
+                <li class="dropdown-item dropdown-submenu">
+					<a class="dropdown-toggle text-decoration-none text-light" id="private_main" data-toggle="dropdown">Full Addons</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                    </ul>
+				</li>
                 <li><hr class="dropdown-divider"></li>
                 
                 <li><span class="dropdown-item-text text-muted">For ZP:</span></li>
@@ -124,3 +114,4 @@
         </div>
     </div>
 </nav>
+<script>get_listplugins(0);</script>
