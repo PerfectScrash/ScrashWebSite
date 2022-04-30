@@ -13,43 +13,43 @@ Banco de dados improvisado
 // Ultimo ID: 22
 let plugins = [
 	// Main plugins
-	[0, "Dragon Ball Mod", "index.html?pag_dir=dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
-	[1, "Zombie Plague Special", "index.html?pag_dir=zp_special_official", 2, "pl_main", "Zombie Plague Special 4.5", "Imagens/zpsp_banner_site.png", "See the latest version of this Zombie Plague"],
+	[23, "Dragon Ball Mod", "dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
+	[1, "Zombie Plague Special", "zp_special_official", 2, "pl_main", "Zombie Plague Special 4.5", "Imagens/zpsp_banner_site.png", "See the latest version of this Zombie Plague"],
 
 	// Special Class (Human)
-	[2, "Antidoter", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_antidoter", 2, "zpsp_sp_h", "[ZPSp] Special Class: Antidoter", "Imagens/antidoter_banner.png", "Cure zombies with vaccine of T-Virus"],
-	[3, "Pain/Nagato", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_pain", 2, "zpsp_sp_h", "[ZPSp] Special Class: Pain/Nagato", "Imagens/pain_banner.png", "Use Rinnegan's Skills against Zombies"],
-	[4, "Plasma", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_plasma", 2, "zpsp_sp_h", "[ZPSp] Special Class: Plasma", "Imagens/plasma_banner.png", "Give a player a one Plasma Rifle"],
-	[5, "Chuck Norris", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_chucknorris", 2, "zpsp_sp_h", "[ZPSp] Special Class: Chuck Norris", "Imagens/banner_site_scrash.gif", "Become a invencible Chuck Norris"],
-	[6, "Xiter", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_xiter", 2, "zpsp_sp_h", "[ZPSp] Special Class: Xiter", "Imagens/banner_site_scrash.gif", "Don't use this Xiter :)"],
-	[7, "Priest", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_priest", 2, "zpsp_sp_h", "[ZPSp] Special Class: Priest", "Imagens/banner_site_scrash.gif", "Removes a Demon from Zombie with a Holy Grenade"],
-	[8, "Grenadier", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_grenadier", 2, "zpsp_sp_h", "[ZPSp] Special Class: Grenadier", "Imagens/banner_site_scrash.gif", "Infinite kill bombs"],
+	[2, "Antidoter", "Pages/Special_Classes/zpsp_spc_antidoter", 2, "zpsp_sp_h", "[ZPSp] Special Class: Antidoter", "Imagens/antidoter_banner.png", "Cure zombies with vaccine of T-Virus"],
+	[3, "Pain/Nagato", "Pages/Special_Classes/zpsp_spc_pain", 2, "zpsp_sp_h", "[ZPSp] Special Class: Pain/Nagato", "Imagens/pain_banner.png", "Use Rinnegan's Skills against Zombies"],
+	[4, "Plasma", "Pages/Special_Classes/zpsp_spc_plasma", 2, "zpsp_sp_h", "[ZPSp] Special Class: Plasma", "Imagens/plasma_banner.png", "Give a player a one Plasma Rifle"],
+	[5, "Chuck Norris", "Pages/Special_Classes/zpsp_spc_chucknorris", 2, "zpsp_sp_h", "[ZPSp] Special Class: Chuck Norris", "Imagens/banner_site_scrash.gif", "Become a invencible Chuck Norris"],
+	[6, "Xiter", "Pages/Special_Classes/zpsp_spc_xiter", 2, "zpsp_sp_h", "[ZPSp] Special Class: Xiter", "Imagens/banner_site_scrash.gif", "Don't use this Xiter :)"],
+	[7, "Priest", "Pages/Special_Classes/zpsp_spc_priest", 2, "zpsp_sp_h", "[ZPSp] Special Class: Priest", "Imagens/banner_site_scrash.gif", "Removes a Demon from Zombie with a Holy Grenade"],
+	[8, "Grenadier", "Pages/Special_Classes/zpsp_spc_grenadier", 2, "zpsp_sp_h", "[ZPSp] Special Class: Grenadier", "Imagens/banner_site_scrash.gif", "Infinite kill bombs"],
 
 	// Special Class (Zombie)
-	[9, "Thanos", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_thanos", 2, "zpsp_sp_z", "[ZPSp] Special Class: Thanos", "Imagens/thanos_Banner.png", "See this greatest gamemod maked for Zombie Plague Special"],
-	[10, "Raptor", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_raptor", 2, "zpsp_sp_z", "[ZPSp] Special Class: Raptor", "Imagens/banner_site_scrash.gif", "Very high speed"],
-	[11, "Dog", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_dog", 2, "zpsp_sp_z", "[ZPSp] Special Class: Dog", "Imagens/banner_site_scrash.gif", "Turn a furious Dog"],
+	[9, "Thanos", "Pages/Special_Classes/zpsp_spc_thanos", 2, "zpsp_sp_z", "[ZPSp] Special Class: Thanos", "Imagens/thanos_Banner.png", "See this greatest gamemod maked for Zombie Plague Special"],
+	[10, "Raptor", "Pages/Special_Classes/zpsp_spc_raptor", 2, "zpsp_sp_z", "[ZPSp] Special Class: Raptor", "Imagens/banner_site_scrash.gif", "Very high speed"],
+	[11, "Dog", "Pages/Special_Classes/zpsp_spc_dog", 2, "zpsp_sp_z", "[ZPSp] Special Class: Dog", "Imagens/banner_site_scrash.gif", "Turn a furious Dog"],
 
 	// Special Class (Both)
-	[12, "Sonic & Shadow", "index.html?pag_dir=Pages/Special_Classes/zpsp_spc_sonic_shadow", 2, "zpsp_sp_all", "[ZPSp] Special Class: Sonic & Shadow", "Imagens/sonic_shadow_banner.png", "Play \"Sonic 3D Game\" in CS 1.6 Zombie Plague Mod"],
+	[12, "Sonic & Shadow", "Pages/Special_Classes/zpsp_spc_sonic_shadow", 2, "zpsp_sp_all", "[ZPSp] Special Class: Sonic & Shadow", "Imagens/sonic_shadow_banner.png", "Play \"Sonic 3D Game\" in CS 1.6 Zombie Plague Mod"],
 
 	// Additions
-	[13, "[ZPSp] - XP Level System", "index.html?pag_dir=Pages/Addons/zpsp_xp_system", 2, "zpsp_addon", "[ZPSp] Addon: XP Level System", "Imagens/xpsystem_gif.gif", "Turn your Zombie Plague Special 4.5 into Zombie Plague XP"],
-	[14, "Lasermine Perfect 4.3", "index.html?pag_dir=Pages/Addons/zp_lasermine_perfect", 2, "zpsp_addon", "[ZPSp] Addon: Lasermine Perfect 4.3", "Imagens/lasermine_banner.png", "See the best lasermine for zombie plague"],
-	[15, "Custom Player Model", "index.html?pag_dir=Pages/Addons/zpsp_addon_cplayer_model", 2, "zpsp_addon", "[ZPSp] Addon: Custom Player Model", "Imagens/banner_site_scrash.gif", "Set a player a custom model"],
-	[16, "Thunder Weapons", "index.html?pag_dir=Pages/Addons/thunder_weapons", 2, "zpsp_addon", "[ZPSp] Addon: Thunder Weapons", "Imagens/banner_site_scrash.gif", "Can evolute your weapons when you kill a zombie"],
+	[13, "[ZPSp] - XP Level System", "Pages/Addons/zpsp_xp_system", 2, "zpsp_addon", "[ZPSp] Addon: XP Level System", "Imagens/xpsystem_gif.gif", "Turn your Zombie Plague Special 4.5 into Zombie Plague XP"],
+	[14, "Lasermine Perfect 4.3", "Pages/Addons/zp_lasermine_perfect", 2, "zpsp_addon", "[ZPSp] Addon: Lasermine Perfect 4.3", "Imagens/lasermine_banner.png", "See the best lasermine for zombie plague"],
+	[15, "Custom Player Model", "Pages/Addons/zpsp_addon_cplayer_model", 2, "zpsp_addon", "[ZPSp] Addon: Custom Player Model", "Imagens/banner_site_scrash.gif", "Set a player a custom model"],
+	[16, "Thunder Weapons", "Pages/Addons/thunder_weapons", 2, "zpsp_addon", "[ZPSp] Addon: Thunder Weapons", "Imagens/banner_site_scrash.gif", "Can evolute your weapons when you kill a zombie"],
 
 	// Extra itens
-	[17, "Uganda Knuckles Gun", "index.html?pag_dir=Pages/Extra_Itens/zp_uganda_knuckles_gun", 2, "zpsp_extra_item", "[ZP] Extra: Uganda Knuckles Gun", "Imagens/uganda_banner.png", "Basing in Sonic Games Memes"],
-	[18, "Elemental (Fire & Ice)", "index.html?pag_dir=Pages/Extra_Itens/zp_elemental", 2, "zpsp_extra_item", "[ZP] Extra: Elemental (Fire & Ice)", "Imagens/elemental_banner.png", "Burn and frost zombies using the dual elemental"],
-	[19, "Paintball Gun", "index.html?pag_dir=Pages/Extra_Itens/zp_paintball_gun", 2, "zpsp_extra_item", "[ZP] Extra: Paintball Gun", "Imagens/banner_site_scrash.gif", "Gives a Paintball weapon"],
-	[20, "[ZPSp] Frost M4A1", "index.html?pag_dir=Pages/Extra_Itens/zpsp_frost_m4a1", 2, "zpsp_extra_item", "[ZPSp] Extra: Frost M4A1", "Imagens/frostm4a1_banner.png", "Frost Zombies with this M4A1"],
+	[17, "Uganda Knuckles Gun", "Pages/Extra_Itens/zp_uganda_knuckles_gun", 2, "zpsp_extra_item", "[ZP] Extra: Uganda Knuckles Gun", "Imagens/uganda_banner.png", "Basing in Sonic Games Memes"],
+	[18, "Elemental (Fire & Ice)", "Pages/Extra_Itens/zp_elemental", 2, "zpsp_extra_item", "[ZP] Extra: Elemental (Fire & Ice)", "Imagens/elemental_banner.png", "Burn and frost zombies using the dual elemental"],
+	[19, "Paintball Gun", "Pages/Extra_Itens/zp_paintball_gun", 2, "zpsp_extra_item", "[ZP] Extra: Paintball Gun", "Imagens/banner_site_scrash.gif", "Gives a Paintball weapon"],
+	[20, "[ZPSp] Frost M4A1", "Pages/Extra_Itens/zpsp_frost_m4a1", 2, "zpsp_extra_item", "[ZPSp] Extra: Frost M4A1", "Imagens/frostm4a1_banner.png", "Frost Zombies with this M4A1"],
 
 	// Map Script
-	[21, "zm_5em1_scrash", "index.html?pag_dir=Pages/Addons/map_script_5em1", 2, "map_script", "Map Script: zm_5em1_scrash", "Imagens/banner_site_scrash.gif", "Change map every round without loading"],
+	[21, "zm_5em1_scrash", "Pages/Addons/map_script_5em1", 2, "map_script", "Map Script: zm_5em1_scrash", "Imagens/banner_site_scrash.gif", "Change map every round without loading"],
 
 	// Private Plugins
-	[22, "Scrash's Capture the Flag", "index.html?pag_dir=Pages/Private/scrash_ctf", 3, "private_main", "Scrash's Capture the Flag", "Imagens/ctf_banner.png", "See the private full addons"]
+	[22, "Scrash's Capture the Flag", "Pages/Private/scrash_ctf", 3, "private_main", "Scrash's Capture the Flag", "Imagens/ctf_banner.png", "See the private full addons"]
 ];
 
 // Le a pagina no GET
@@ -68,11 +68,40 @@ function ler_pagina() {
 		return b;
 	})(window.location.search.substr(1).split('&'));
 
-	var varGet1 = qs[0, "pag_dir"];
-	if (varGet1 != "" && varGet1 != " " && varGet1 != null && varGet1 != undefined) {
-		document.write("<div data-include='" + varGet1 + "'></div>")
+	var varGet1 = qs[0, "pid"];
+	if(varGet1 == null || varGet1 == undefined || varGet1 == "" || varGet1 == "home" || varGet1 == 0) {
+		document.write("<div data-include='home'></div>")
+		document.title = "Home - Scrash's Website";
+		return;
 	}
-	else document.write("<div data-include='home'></div>")
+
+	if(varGet1 == "list") {
+		document.write("<div data-include='list_plugins'></div>");
+		document.title = "Plugin List - Scrash's Website";
+		return;
+	}
+	
+	if(isNaN(varGet1) || varGet1 <= 0) {
+		document.write("<div data-include='error404'></div>");
+		document.title = "Error - Scrash's Website";
+		return;
+	}
+	
+	var id_plugin = null
+	for (var i = 0; i < plugins.length; i++) {
+		if(varGet1 == plugins[i][ar_id]) {
+			id_plugin = i;
+			break;
+		}
+	}
+	if(id_plugin == null) {
+		document.write("<div data-include='error404'></div>");
+		document.title = "Error - Scrash's Website";
+		return;
+	}
+	
+	document.title = plugins[id_plugin][ar_name] + " - Scrash's Website";
+	document.write("<div data-include='" + plugins[id_plugin][ar_link] + "'></div>")
 }
 
 function get_listplugins(tipo) {
@@ -80,7 +109,7 @@ function get_listplugins(tipo) {
 
 		if (tipo == 0) {
 			var lista = document.getElementById(plugins[i][ar_categoria]).innerHTML;
-			lista = lista + "<li><a class='dropdown-item' href='" + plugins[i][ar_link] + "'>" + plugins[i][ar_def_name] + "</a></li>";
+			lista = lista + "<li><a class='dropdown-item' href='index.html?pid=" + plugins[i][ar_id] + "'>" + plugins[i][ar_def_name] + "</a></li>";
 			document.getElementById(plugins[i][ar_categoria]).innerHTML = lista;
 		}
 		else {
@@ -90,7 +119,7 @@ function get_listplugins(tipo) {
 
 			var elemento = "list_" + plugins[i][ar_categoria] + "_" + plugins[i][ar_id_tipo];
 			var lista = document.getElementById(elemento).innerHTML;
-			lista = lista + "<li><a class='text-white text-decoration-none' href='" + plugins[i][ar_link] + "'>" + descicao + plugins[i][ar_def_name] + "</a></li>";
+			lista = lista + "<li><a class='text-white text-decoration-none' href='index.html?pid=" + plugins[i][ar_id] + "'>" + descicao + plugins[i][ar_def_name] + "</a></li>";
 			document.getElementById(elemento).innerHTML = lista;
 		}
 	}
@@ -102,7 +131,7 @@ Carrosel da home
 carrossel_home_ids = [
 	1,	// Zombie plague special
 	13, // ZP XP
-	0,	// Dragon ball
+	23,	// Dragon ball
 	22, // CTF
 	9,	// Thanos
 	12 // Sonic
@@ -119,7 +148,7 @@ function Get_Carrosel_Home() {
 			slides += "<button type='button' data-bs-target='#carrosel_primario' data-bs-slide-to='" + (carrosel + 1).toString() + "' aria-label='Slide " + (carrosel + 2).toString() + "'></button>";
 
 			divisoria += "<div class='carousel-item' data-bs-interval='5000'>";
-			divisoria += "<a class='text-decoration-none' href='" + plugins[i][ar_link] + "'><img src='" + plugins[i][ar_imagem] + " ' class='d-block w-100' alt='" + plugins[i][ar_name] + "'>";
+			divisoria += "<a class='text-decoration-none' href='index.html?pid=" + plugins[i][ar_id] + "'><img src='" + plugins[i][ar_imagem] + " ' class='d-block w-100' alt='" + plugins[i][ar_name] + "'>";
 			divisoria += "<div class='carousel-caption'>"
 			divisoria += "<h5>" + plugins[i][ar_name] + "</h5>";
 			divisoria += "<p>" + plugins[i][ar_descricao] + "</p></div></a></div>";
@@ -142,7 +171,7 @@ Carrosel da lista de plugins
 carrosel_list_plugins = [
 	1,	// Zombie plague special
 	13, // ZP XP
-	0,	// Dragon ball
+	23,	// Dragon ball
 	22,	// CTF
 	9,	// Thanos
 	3,	// Pain
@@ -164,7 +193,7 @@ function Get_Carrosel_ListPlugins() {
 
 			divisoria += "<div class='carousel-item";
 			if (carrosel == 0) divisoria += " active";
-			divisoria += "' data-bs-interval='5000'><a class='text-decoration-none' href='" + plugins[i][ar_link] + "'><img src='" + plugins[i][ar_imagem] + " ' class='d-block w-100' alt='" + plugins[i][ar_name] + "'>";
+			divisoria += "' data-bs-interval='5000'><a class='text-decoration-none' href='index.html?pid=" + plugins[i][ar_id] + "'><img src='" + plugins[i][ar_imagem] + " ' class='d-block w-100' alt='" + plugins[i][ar_name] + "'>";
 			divisoria += "<div class='carousel-caption'>"
 			divisoria += "<h5>" + plugins[i][ar_name] + "</h5>";
 			divisoria += "<p>" + plugins[i][ar_descricao] + "</p></div></a></div>";
@@ -188,7 +217,7 @@ group_card_ids = [
 ]
 
 cards_plugins = [
-	[1, 0],
+	[1, 23],
 	[9, 3, 12],
 	[18, 17, 20],
 	[13, 14, 16],
@@ -217,7 +246,7 @@ function AddCardItens() {
 				continue;
 
 			div_card += "<div class='card text-white bg-dark border border-white mb-3 p-2'>";
-			div_card += "<a href='" + plugins[i][ar_link] + "' class='text-white text-decoration-none'>"
+			div_card += "<a href='index.html?pid=" + plugins[i][ar_id] + "' class='text-white text-decoration-none'>"
 			div_card += "<img src='" + plugins[i][ar_imagem] + "' class='card-img-top' alt='" + plugins[i][ar_name] + "'>";
 			div_card += "<div class='card-body'>";
 			div_card += "<h5 class='card-title'>" + plugins[i][ar_name] + "</h5>";
