@@ -174,3 +174,58 @@ function Get_Carrosel_ListPlugins() {
 	document.getElementById("carrosel_list_plugins_div").innerHTML = divisoria;
 	document.getElementById("carrosel_list_plugins_slides").innerHTML = slides;
 }
+
+/*==============
+Cards
+===============*/
+
+group_card_ids = [
+	["full_mode", "Full Mode"],
+	["zp_special_classes", "Best ZPSp Custom Special Classes"],
+	["zp_extra_itens", "Extra Itens"],
+	["zpsp_additions", "Zombie Plague Additions"],
+	//["private", "Private Plugins"]
+]
+
+cards_plugins = [
+	[1, 0],
+	[9, 3, 12],
+	[18, 17, 20],
+	[13, 14, 16],
+	//[21, 22]
+]
+
+function AddCardItens() {
+	var div_card, div_principal
+	for (var y = 0; y < group_card_ids.length; y++) {
+		// Criando grupos
+		div_principal = document.getElementById("scrash_cards").innerHTML;
+		div_principal += "<hr/><br/><h3>" + group_card_ids[y][1] + "</h3>";
+		if(y == 0)
+			div_principal += "<div class='card-group card-group-row' id='" + group_card_ids[y][0] + "'></div>";
+		else
+			div_principal += "<div class='card-group card-group-row mb-5' id='" + group_card_ids[y][0] + "'></div>";
+		
+		document.getElementById("scrash_cards").innerHTML = div_principal;
+		//---------------
+
+
+		div_card = document.getElementById(group_card_ids[y][0]).innerHTML;
+		for (var card = 0; card < cards_plugins[y].length; card++) {
+		for (var i = 0; i < plugins.length; i++) {
+			if (plugins[i][ar_id] != cards_plugins[y][card] || cards_plugins[y][card] == null)
+				continue;
+
+			div_card += "<div class='card text-white bg-dark border border-white mb-3 p-2'>";
+			div_card += "<a href='" + plugins[i][ar_link] + "' class='text-white text-decoration-none'>"
+			div_card += "<img src='" + plugins[i][ar_imagem] + "' class='card-img-top' alt='" + plugins[i][ar_name] + "'>";
+			div_card += "<div class='card-body'>";
+			div_card += "<h5 class='card-title'>" + plugins[i][ar_name] + "</h5>";
+			div_card += "<p class='card-text'>" + plugins[i][ar_descricao] + "</p>";
+			div_card += "</div></a></div>";
+
+		}}
+	
+		document.getElementById(group_card_ids[y][0]).innerHTML = div_card;
+	}
+}
