@@ -10,7 +10,7 @@ var ar_descricao = 7;
 /*===========================
 Banco de dados improvisado
 ===========================*/
-// Ultimo ID: 22
+// Ultimo ID: 24
 let plugins = [
 	// Main plugins
 	[23, "Dragon Ball Mod", "dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
@@ -38,6 +38,7 @@ let plugins = [
 	[14, "Lasermine Perfect 4.3", "Pages/Addons/zp_lasermine_perfect", 2, "zpsp_addon", "[ZPSp] Addon: Lasermine Perfect 4.3", "Imagens/lasermine_banner.png", "See the best lasermine for zombie plague"],
 	[15, "Custom Player Model", "Pages/Addons/zpsp_addon_cplayer_model", 2, "zpsp_addon", "[ZPSp] Addon: Custom Player Model", "Imagens/banner_site_scrash.gif", "Set a player a custom model"],
 	[16, "Thunder Weapons", "Pages/Addons/thunder_weapons", 2, "zpsp_addon", "[ZPSp] Addon: Thunder Weapons", "Imagens/banner_site_scrash.gif", "Can evolute your weapons when you kill a zombie"],
+	[24, "First Zombie Helper", "Pages/Addons/zpsp_first_zombie_helper", 2, "zpsp_addon", "[ZPSp] Addon: First Zombie Helper", "Imagens/banner_site_scrash.gif", "Give a first zombie an helper"],
 
 	// Extra itens
 	[17, "Uganda Knuckles Gun", "Pages/Extra_Itens/zp_uganda_knuckles_gun", 2, "zpsp_extra_item", "[ZP] Extra: Uganda Knuckles Gun", "Imagens/uganda_banner.png", "Basing in Sonic Games Memes"],
