@@ -15,11 +15,18 @@
             </li>
 
             <li class="nav-item dropdown" onmouseover="$('#PluginList_Dropdown').dropdown('show');" onmouseout="$('#PluginList_Dropdown').dropdown('hide');">
-                <a class="nav-link dropdown-toggle" href="#" id="PluginList_Dropdown" onclick="window.location.href='index.html?pid=list';">
+                <a class="nav-link dropdown-toggle hide-mobile" href="#" id="PluginList_Dropdown" onclick="window.location.href='index.html?pid=list';">
                 Plugin List
                 </a>
+                <a class="nav-link dropdown-toggle show-mobile" href="#" id="PluginList_Dropdown">
+                Plugin List
+                </a>
+
+
                 <ul class="dropdown-menu dropdown-menu-dark navbar-dark" aria-labelledby="PluginList_Dropdown">
-                
+                <li><a class="dropdown-item show-mobile" href="index.html?pid=list">Full Plugin List</a></li>
+                <li><hr class="dropdown-divider show-mobile"></li>
+
                 <li><span class="dropdown-item-text text-muted">Main Plugins:</span></li>
                 <li class="dropdown-item dropdown-submenu">
                     <a class="dropdown-toggle text-decoration-none text-light" data-toggle="dropdown">Mods</a>

@@ -114,7 +114,25 @@ body {
     text-align: left !important;
     overflow: auto
 }
-
+.hide-mobile {
+    display: block;
+}
+.show-mobile {
+    display: none;
+}
+@media only screen and (max-width: 991px) {
+    .dropdown-submenu>.dropdown-menu {
+        margin-top: 0.2rem;
+        margin-left: 1rem;
+        border-radius: 6px;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}
 @media only screen and (max-width: 500px) {
     .footer_mobile_check {
         flex-direction: column-reverse !important;
@@ -153,4 +171,5 @@ body {
     .carousel-indicators {
         margin-bottom: 0.2rem;
     }
+    
 }
