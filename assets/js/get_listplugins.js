@@ -10,7 +10,7 @@ var ar_descricao = 7;
 /*===========================
 Banco de dados improvisado
 ===========================*/
-// Ultimo ID: 24
+// Ultimo ID: 30
 let plugins = [
 	// Main plugins
 	[23, "Dragon Ball Mod", "dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
@@ -45,12 +45,21 @@ let plugins = [
 	[18, "Elemental (Fire & Ice)", "Pages/Extra_Itens/zp_elemental", 2, "zpsp_extra_item", "[ZP] Extra: Elemental (Fire & Ice)", "Imagens/elemental_banner.png", "Burn and frost zombies using the dual elemental"],
 	[19, "Paintball Gun", "Pages/Extra_Itens/zp_paintball_gun", 2, "zpsp_extra_item", "[ZP] Extra: Paintball Gun", "Imagens/banner_site_scrash.gif", "Gives a Paintball weapon"],
 	[20, "[ZPSp] Frost M4A1", "Pages/Extra_Itens/zpsp_frost_m4a1", 2, "zpsp_extra_item", "[ZPSp] Extra: Frost M4A1", "Imagens/frostm4a1_banner.png", "Frost Zombies with this M4A1"],
-
+	
 	// Map Script
 	[21, "zm_5em1_scrash", "Pages/Addons/map_script_5em1", 2, "map_script", "Map Script: zm_5em1_scrash", "Imagens/banner_site_scrash.gif", "Change map every round without loading"],
-
+	
 	// Private Plugins
-	[22, "Scrash's Capture the Flag", "Pages/Private/scrash_ctf", 3, "private_main", "Scrash's Capture the Flag", "Imagens/ctf_banner.png", "See the private full addons"]
+	[22, "Scrash's Capture the Flag", "Pages/Private/scrash_ctf", 3, "private_main", "Scrash's Capture the Flag", "Imagens/ctf_banner.png", "See the private full addons"],
+	
+	// Game Mode
+	[25, "Cannibal", "Pages/Gamemode/zpsp_gm_cannibal", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Cannibal", "Imagens/banner_site_scrash.gif", "Zombies vs Zombies"],
+	[26, "Tag Mode", "Pages/Gamemode/zpsp_gm_tag", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Tag Mode", "Imagens/banner_site_scrash.gif", "Tag mode for Zombie Plague Special"],
+	[27, "Deathmatch", "Pages/Gamemode/zpsp_gm_deathmatch", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Deathmathch", "Imagens/banner_site_scrash.gif", "Its Like swarm mode but you can respawn"],
+	[28, "Gravity", "Pages/Gamemode/zpsp_gm_gravity", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Gravity", "Imagens/banner_site_scrash.gif", "Its like swarm mode, but with low gravity"],
+	[29, "Nemesis Xtreme", "Pages/Gamemode/zpsp_gm_nem_xtreme", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Nemesis Xtreme", "Imagens/banner_site_scrash.gif", "X Nemesis vs Other humans"],
+	[30, "Hot Potato Mode", "Pages/Gamemode/zpsp_gm_hotpotato", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Hot Potato Mode", "Imagens/banner_site_scrash.gif", "Hot Potato mode for Zombie Plague Special"],
+
 ];
 
 // Le a pagina no GET
@@ -214,6 +223,7 @@ group_card_ids = [
 	["zp_special_classes", "Best ZPSp Custom Special Classes"],
 	["zp_extra_itens", "Extra Itens"],
 	["zpsp_additions", "Zombie Plague Additions"],
+	["zpsp_game_modes", "Zombie Plague Gamemodes"],
 	//["private", "Private Plugins"]
 ]
 
@@ -222,6 +232,7 @@ cards_plugins = [
 	[9, 3, 12],
 	[18, 17, 20],
 	[13, 14, 16],
+	[26, 25, 29],
 	//[21, 22]
 ]
 
