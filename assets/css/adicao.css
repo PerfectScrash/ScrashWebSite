@@ -51,6 +51,7 @@
     border: 1px;
     border-color: yellow;
     border-style: double;
+    padding: 3rem;
 }
 
 body {
@@ -101,6 +102,16 @@ body {
     border-color: yellow;
     border-style: double;
     width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.image-post-fluid {
+    border-radius: 15px;
+    border: 2px;
+    border-color: yellow;
+    border-style: double;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 1.5rem;
 }
 
@@ -171,5 +182,7 @@ body {
     .carousel-indicators {
         margin-bottom: 0.2rem;
     }
-    
+    .principal {
+        padding: 2rem;
+    }
 }
