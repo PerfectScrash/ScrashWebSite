@@ -10,7 +10,7 @@ var ar_descricao = 7;
 /*===========================
 Banco de dados improvisado
 ===========================*/
-// Ultimo ID: 30
+// Ultimo ID: 33
 let plugins = [
 	// Main plugins
 	[23, "Dragon Ball Mod", "dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
@@ -39,6 +39,10 @@ let plugins = [
 	[15, "Custom Player Model", "Pages/Addons/zpsp_addon_cplayer_model", 2, "zpsp_addon", "[ZPSp] Addon: Custom Player Model", "Imagens/banner_site_scrash.gif", "Set a player a custom model"],
 	[16, "Thunder Weapons", "Pages/Addons/thunder_weapons", 2, "zpsp_addon", "[ZPSp] Addon: Thunder Weapons", "Imagens/thunder_wpn_banner.png", "Can evolute your weapons when you kill a zombie"],
 	[24, "First Zombie Helper", "Pages/Addons/zpsp_first_zombie_helper", 2, "zpsp_addon", "[ZPSp] Addon: First Zombie Helper", "Imagens/banner_site_scrash.gif", "Give a first zombie an helper"],
+	[31, "Class Limiter", "Pages/Addons/zpsp_class_limiter", 2, "zpsp_addon", "[ZPSp] Addon: Class Limiter", "Imagens/banner_site_scrash.gif", "Give limit for Zombie/Human Classes"],
+	[32, "Extra Item Limiter", "Pages/Addons/zpsp_item_limiter", 2, "zpsp_addon", "[ZPSp] Addon: Extra Item Limiter", "Imagens/banner_site_scrash.gif", "Give limit for Extra itens"],
+	[33, "Delayed Infection Bomb", "Pages/Addons/zpsp_infbomb_delay", 2, "zpsp_addon", "[ZPSp] Addon: Delayed Infection Bomb", "Imagens/banner_site_scrash.gif", "Set a time delay for use a Infection Bomb again"],
+	[34, "Zombie Escape Knockback", "Pages/Addons/zpsp_escape_knockback", 2, "zpsp_addon", "[ZPSp] Addon: Zombie Escape Knockback", "Imagens/banner_site_scrash.gif", "Give a knockback like in zombie escape mods"],
 
 	// Extra itens
 	[17, "Uganda Knuckles Gun", "Pages/Extra_Itens/zp_uganda_knuckles_gun", 2, "zpsp_extra_item", "[ZP] Extra: Uganda Knuckles Gun", "Imagens/uganda_banner.png", "Basing in Sonic Games Memes"],
