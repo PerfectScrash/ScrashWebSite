@@ -37,7 +37,7 @@ let plugins = [
 	[13, "[ZPSp] - XP Level System", "Pages/Addons/zpsp_xp_system", 2, "zpsp_addon", "[ZPSp] Addon: XP Level System", "Imagens/xpsystem_gif.gif", "Turn your Zombie Plague Special 4.5 into Zombie Plague XP"],
 	[14, "Lasermine Perfect 4.3", "Pages/Addons/zp_lasermine_perfect", 2, "zpsp_addon", "[ZPSp] Addon: Lasermine Perfect 4.3", "Imagens/lasermine_banner.png", "See the best lasermine for zombie plague"],
 	[15, "Custom Player Model", "Pages/Addons/zpsp_addon_cplayer_model", 2, "zpsp_addon", "[ZPSp] Addon: Custom Player Model", "Imagens/banner_site_scrash.gif", "Set a player a custom model"],
-	[16, "Thunder Weapons", "Pages/Addons/thunder_weapons", 2, "zpsp_addon", "[ZPSp] Addon: Thunder Weapons", "Imagens/banner_site_scrash.gif", "Can evolute your weapons when you kill a zombie"],
+	[16, "Thunder Weapons", "Pages/Addons/thunder_weapons", 2, "zpsp_addon", "[ZPSp] Addon: Thunder Weapons", "Imagens/thunder_wpn_banner.png", "Can evolute your weapons when you kill a zombie"],
 	[24, "First Zombie Helper", "Pages/Addons/zpsp_first_zombie_helper", 2, "zpsp_addon", "[ZPSp] Addon: First Zombie Helper", "Imagens/banner_site_scrash.gif", "Give a first zombie an helper"],
 
 	// Extra itens
@@ -53,12 +53,12 @@ let plugins = [
 	[22, "Scrash's Capture the Flag", "Pages/Private/scrash_ctf", 3, "private_main", "Scrash's Capture the Flag", "Imagens/ctf_banner.png", "See the private full addons"],
 	
 	// Game Mode
-	[25, "Cannibal", "Pages/Gamemode/zpsp_gm_cannibal", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Cannibal", "Imagens/banner_site_scrash.gif", "Zombies vs Zombies"],
-	[26, "Tag Mode", "Pages/Gamemode/zpsp_gm_tag", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Tag Mode", "Imagens/banner_site_scrash.gif", "Tag mode for Zombie Plague Special"],
-	[27, "Deathmatch", "Pages/Gamemode/zpsp_gm_deathmatch", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Deathmathch", "Imagens/banner_site_scrash.gif", "Its Like swarm mode but you can respawn"],
-	[28, "Gravity", "Pages/Gamemode/zpsp_gm_gravity", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Gravity", "Imagens/banner_site_scrash.gif", "Its like swarm mode, but with low gravity"],
-	[29, "Nemesis Xtreme", "Pages/Gamemode/zpsp_gm_nem_xtreme", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Nemesis Xtreme", "Imagens/banner_site_scrash.gif", "X Nemesis vs Other humans"],
-	[30, "Hot Potato Mode", "Pages/Gamemode/zpsp_gm_hotpotato", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Hot Potato Mode", "Imagens/banner_site_scrash.gif", "Hot Potato mode for Zombie Plague Special"],
+	[25, "Cannibal", "Pages/Gamemode/zpsp_gm_cannibal", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Cannibal", "Imagens/cannibal_banner.png", "Zombies vs Zombies"],
+	[26, "Tag Mode", "Pages/Gamemode/zpsp_gm_tag", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Tag Mode", "Imagens/tag_mode_banner.png", "Tag mode for Zombie Plague Special"],
+	[27, "Deathmatch", "Pages/Gamemode/zpsp_gm_deathmatch", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Deathmathch", "Imagens/banner_zombie1.png", "Its Like swarm mode but you can respawn"],
+	[28, "Gravity", "Pages/Gamemode/zpsp_gm_gravity", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Gravity", "Imagens/banner_zombie1.png", "Its like swarm mode, but with low gravity"],
+	[29, "Nemesis Xtreme", "Pages/Gamemode/zpsp_gm_nem_xtreme", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Nemesis Xtreme", "Imagens/nem_extreme_banner.png", "X Nemesis vs Other humans"],
+	[30, "Hot Potato Mode", "Pages/Gamemode/zpsp_gm_hotpotato", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Hot Potato Mode", "Imagens/banner_zombie1.png", "Hot Potato mode for Zombie Plague Special"],
 
 ];
 
