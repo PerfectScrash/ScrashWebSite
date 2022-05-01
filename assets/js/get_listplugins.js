@@ -141,10 +141,10 @@ Carrosel da home
 carrossel_home_ids = [
 	1,	// Zombie plague special
 	13, // ZP XP
-	23,	// Dragon ball
 	22, // CTF
 	9,	// Thanos
-	12 // Sonic
+	26, // Tag
+	25 // Cannibal 
 ]
 
 function Get_Carrosel_Home() {
@@ -184,9 +184,9 @@ carrosel_list_plugins = [
 	23,	// Dragon ball
 	22,	// CTF
 	9,	// Thanos
-	3,	// Pain
 	12,	// Sonic & Shadow
-	20 // Frost m4a1
+	20, // Frost m4a1
+	25 // Cannibal
 ]
 
 function Get_Carrosel_ListPlugins() {
