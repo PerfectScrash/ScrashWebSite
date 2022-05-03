@@ -47,9 +47,9 @@ let plugins = [
 	// Extra itens
 	[17, "Uganda Knuckles Gun", "Pages/Extra_Itens/zp_uganda_knuckles_gun", 2, "zpsp_extra_item", "[ZP] Extra: Uganda Knuckles Gun", "Imagens/uganda_banner.png", "Basing in Sonic Games Memes"],
 	[18, "Elemental (Fire & Ice)", "Pages/Extra_Itens/zp_elemental", 2, "zpsp_extra_item", "[ZP] Extra: Elemental (Fire & Ice)", "Imagens/elemental_banner.png", "Burn and frost zombies using the dual elemental"],
-	[19, "Paintball Gun", "Pages/Extra_Itens/zp_paintball_gun", 2, "zpsp_extra_item", "[ZP] Extra: Paintball Gun", "Imagens/banner_site_scrash.gif", "Gives a Paintball weapon"],
+	[19, "Paintball Gun", "Pages/Extra_Itens/zp_paintball_gun", 2, "zpsp_extra_item", "[ZP] Extra: Paintball Gun", "Imagens/paintball_gun_banner.png", "Gives a Paintball weapon"],
 	[20, "[ZPSp] Frost M4A1", "Pages/Extra_Itens/zpsp_frost_m4a1", 2, "zpsp_extra_item", "[ZPSp] Extra: Frost M4A1", "Imagens/frostm4a1_banner.png", "Frost Zombies with this M4A1"],
-	[35, "[ZPSp] Golden Guitar", "Pages/Extra_Itens/zpsp_golden_guitar", 2, "zpsp_extra_item", "[ZPSp] Extra: Golden Guitar", "Imagens/banner_site_scrash.gif", "Give an Golden Guitar for player"],
+	[35, "[ZPSp] Golden Guitar", "Pages/Extra_Itens/zpsp_golden_guitar", 2, "zpsp_extra_item", "[ZPSp] Extra: Golden Guitar", "Imagens/golden_guitar_banner.png", "Give an Golden Guitar for player"],
 	
 	// Map Script
 	[21, "zm_5em1_scrash", "Pages/Addons/map_script_5em1", 2, "map_script", "Map Script: zm_5em1_scrash", "Imagens/banner_site_scrash.gif", "Change map every round without loading"],
@@ -149,7 +149,7 @@ carrossel_home_ids = [
 	22, // CTF
 	9,	// Thanos
 	26, // Tag
-	25 // Cannibal 
+	35, // Golden Guitar
 ]
 
 function Get_Carrosel_Home() {
@@ -186,12 +186,12 @@ Carrosel da lista de plugins
 carrosel_list_plugins = [
 	1,	// Zombie plague special
 	13, // ZP XP
-	23,	// Dragon ball
 	22,	// CTF
 	9,	// Thanos
 	12,	// Sonic & Shadow
 	20, // Frost m4a1
-	25 // Cannibal
+	25, // Cannibal
+	35 // Golden Guitar
 ]
 
 function Get_Carrosel_ListPlugins() {
@@ -235,7 +235,7 @@ group_card_ids = [
 cards_plugins = [
 	[1, 23],
 	[9, 3, 12],
-	[18, 17, 20],
+	[18, 35, 20],
 	[13, 14, 16],
 	[26, 25, 29],
 	//[21, 22]
