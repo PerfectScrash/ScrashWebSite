@@ -10,7 +10,7 @@ var ar_descricao = 7;
 /*===========================
 Banco de dados improvisado
 ===========================*/
-// Ultimo ID: 33
+// Ultimo ID: 35
 let plugins = [
 	// Main plugins
 	[23, "Dragon Ball Mod", "dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
@@ -49,6 +49,7 @@ let plugins = [
 	[18, "Elemental (Fire & Ice)", "Pages/Extra_Itens/zp_elemental", 2, "zpsp_extra_item", "[ZP] Extra: Elemental (Fire & Ice)", "Imagens/elemental_banner.png", "Burn and frost zombies using the dual elemental"],
 	[19, "Paintball Gun", "Pages/Extra_Itens/zp_paintball_gun", 2, "zpsp_extra_item", "[ZP] Extra: Paintball Gun", "Imagens/banner_site_scrash.gif", "Gives a Paintball weapon"],
 	[20, "[ZPSp] Frost M4A1", "Pages/Extra_Itens/zpsp_frost_m4a1", 2, "zpsp_extra_item", "[ZPSp] Extra: Frost M4A1", "Imagens/frostm4a1_banner.png", "Frost Zombies with this M4A1"],
+	[35, "[ZPSp] Golden Guitar", "Pages/Extra_Itens/zpsp_golden_guitar", 2, "zpsp_extra_item", "[ZPSp] Extra: Golden Guitar", "Imagens/banner_site_scrash.gif", "Give an Golden Guitar for player"],
 	
 	// Map Script
 	[21, "zm_5em1_scrash", "Pages/Addons/map_script_5em1", 2, "map_script", "Map Script: zm_5em1_scrash", "Imagens/banner_site_scrash.gif", "Change map every round without loading"],
