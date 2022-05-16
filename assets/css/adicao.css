@@ -1,3 +1,7 @@
+* {
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
 .dropdown-submenu {
     position: relative;
 }
@@ -178,11 +182,20 @@ body {
         font-size: 0.9rem;
         margin: 5%;
     }
-
+    
     .carousel-indicators {
         margin-bottom: 0.2rem;
     }
     .principal {
         padding: 2rem;
+    }
+}
+@media only screen and (max-width: 325px) {
+    .mob-325-flex {
+        display: flex !important;
+        flex-wrap: inherit !important;
+        align-items: center !important;
+        justify-content: center !important;
+
     }
 }
