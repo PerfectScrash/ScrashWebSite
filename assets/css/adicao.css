@@ -1,6 +1,7 @@
 * {
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
+    font-family: 'Rajdhani', 'Open Sans', sans-serif;
 }
 .dropdown-submenu {
     position: relative;
@@ -67,6 +68,8 @@ body {
     display: flex;
     flex-flow: row wrap;
     flex-direction: row !important;
+    grid-column-gap: 2rem;
+    flex-wrap: nowrap;
 }
 
 .estilo_carrosel {
@@ -161,6 +164,7 @@ body {
         display: flex;
         flex-flow: row wrap;
         flex-direction: column !important;
+        flex-wrap: wrap;
     }
 
     .carousel-caption {
@@ -198,4 +202,59 @@ body {
         justify-content: center !important;
 
     }
+}
+
+.link-plugin {
+    text-decoration: none !important;
+}
+.link-plugin-decoration {
+    text-decoration: underline !important;
+}
+
+.link-plugin, .link-plugin-decoration {
+    color: #FFF !important;
+    transition: color 1.5s;
+}
+.link-plugin:hover, .link-plugin-decoration:hover {
+    color: #ffd700 !important;
+    transition: color 1.5s;
+}
+
+.card-style:hover {
+    border-color: #ffd700 !important; 
+    color: #ffd700 !important;
+    background-color: #001326;
+    box-shadow: 0 0 10px 7px #ffd7008c;
+    transition: box-shadow 1.5s, background-color 1.5s, border-color 1.5s, color 1.5s;
+}
+
+.card-style {
+    margin-bottom: 1.5rem !important;
+    padding: 0.5rem;
+    border-color: #FFF;
+    border-style: solid;
+    background-color: #212529;
+    transition: box-shadow 1.5s, background-color 1.5s, border-color 1.5s, color 1.5s;
+}
+.card-style img {
+    border-radius: 5px;
+}
+.card-style:hover a {
+    color: #ffd700 !important;
+    transition: color 1.5s;
+}
+.card-style a {
+    text-decoration: none !important;
+    color: #FFF !important;
+    transition: color 1.5s;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+h3.modal-title {
+    margin-top: 0;
+
 }

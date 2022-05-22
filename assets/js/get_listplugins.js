@@ -50,13 +50,13 @@ let plugins = [
 	[19, "Paintball Gun", "Pages/Extra_Itens/zp_paintball_gun", 2, "zpsp_extra_item", "[ZP] Extra: Paintball Gun", "Imagens/paintball_gun_banner.png", "Gives a Paintball weapon"],
 	[20, "[ZPSp] Frost M4A1", "Pages/Extra_Itens/zpsp_frost_m4a1", 2, "zpsp_extra_item", "[ZPSp] Extra: Frost M4A1", "Imagens/frostm4a1_banner.png", "Frost Zombies with this M4A1"],
 	[35, "[ZPSp] Golden Guitar", "Pages/Extra_Itens/zpsp_golden_guitar", 2, "zpsp_extra_item", "[ZPSp] Extra: Golden Guitar", "Imagens/golden_guitar_banner.png", "Give an Golden Guitar for player"],
-	
+
 	// Map Script
 	[21, "zm_5em1_scrash", "Pages/Addons/map_script_5em1", 2, "map_script", "Map Script: zm_5em1_scrash", "Imagens/banner_site_scrash.gif", "Change map every round without loading"],
-	
+
 	// Private Plugins
 	[22, "Scrash's Capture the Flag", "Pages/Private/scrash_ctf", 3, "private_main", "Scrash's Capture the Flag", "Imagens/ctf_banner.png", "See the private full addons"],
-	
+
 	// Game Mode
 	[25, "Cannibal", "Pages/Gamemode/zpsp_gm_cannibal", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Cannibal", "Imagens/cannibal_banner.png", "Zombies vs Zombies"],
 	[26, "Tag Mode", "Pages/Gamemode/zpsp_gm_tag", 2, "zpsp_gamemodes", "[ZPSp] Gamemode: Tag Mode", "Imagens/tag_mode_banner.png", "Tag mode for Zombie Plague Special"],
@@ -85,23 +85,23 @@ function ler_pagina() {
 
 	var varGet1 = qs[0, "pid"];
 	if(varGet1 == null || varGet1 == undefined || varGet1 == "" || varGet1 == "home" || varGet1 == 0) {
-		document.write("<div data-include='home'></div>")
+		document.getElementById("main").innerHTML = "<div data-include='home'></div>";
 		document.title = "Home - Scrash's Website";
 		return;
 	}
 
 	if(varGet1 == "list") {
-		document.write("<div data-include='list_plugins'></div>");
+		document.getElementById("main").innerHTML = "<div data-include='list_plugins'></div>";
 		document.title = "Plugin List - Scrash's Website";
 		return;
 	}
-	
+
 	if(isNaN(varGet1) || varGet1 <= 0) {
-		document.write("<div data-include='error404'></div>");
+		document.getElementById("main").innerHTML = "<div data-include='error404'></div>";
 		document.title = "Error - Scrash's Website";
 		return;
 	}
-	
+
 	var id_plugin = null
 	for (var i = 0; i < plugins.length; i++) {
 		if(varGet1 == plugins[i][ar_id]) {
@@ -110,13 +110,15 @@ function ler_pagina() {
 		}
 	}
 	if(id_plugin == null) {
-		document.write("<div data-include='error404'></div>");
+		document.getElementById("main").innerHTML = "<div data-include='error404'></div>";
 		document.title = "Error - Scrash's Website";
+
+		
 		return;
 	}
-	
+
 	document.title = plugins[id_plugin][ar_name] + " - Scrash's Website";
-	document.write("<div data-include='" + plugins[id_plugin][ar_link] + "'></div>")
+	document.getElementById("main").innerHTML = "<div data-include='" + plugins[id_plugin][ar_link] + "'></div>";
 }
 
 function get_listplugins(tipo) {
@@ -134,7 +136,7 @@ function get_listplugins(tipo) {
 
 			var elemento = "list_" + plugins[i][ar_categoria] + "_" + plugins[i][ar_id_tipo];
 			var lista = document.getElementById(elemento).innerHTML;
-			lista = lista + "<li><a class='text-white text-decoration-none' href='index.html?pid=" + plugins[i][ar_id] + "'>" + descicao + plugins[i][ar_def_name] + "</a></li>";
+			lista = lista + "<li><a class='link-plugin' href='index.html?pid=" + plugins[i][ar_id] + "'>" + descicao + plugins[i][ar_def_name] + "</a></li>";
 			document.getElementById(elemento).innerHTML = lista;
 		}
 	}
@@ -248,10 +250,10 @@ function AddCardItens() {
 		div_principal = document.getElementById("scrash_cards").innerHTML;
 		div_principal += "<hr/><br/><h3>" + group_card_ids[y][1] + "</h3>";
 		if(y == 0)
-			div_principal += "<div class='card-group card-group-row' id='" + group_card_ids[y][0] + "'></div>";
+			div_principal += "<div class='card-group-row' id='" + group_card_ids[y][0] + "'></div>";
 		else
-			div_principal += "<div class='card-group card-group-row mb-5' id='" + group_card_ids[y][0] + "'></div>";
-		
+			div_principal += "<div class='card-group-row mb-5' id='" + group_card_ids[y][0] + "'></div>";
+
 		document.getElementById("scrash_cards").innerHTML = div_principal;
 		//---------------
 
@@ -262,8 +264,8 @@ function AddCardItens() {
 			if (plugins[i][ar_id] != cards_plugins[y][card] || cards_plugins[y][card] == null)
 				continue;
 
-			div_card += "<div class='card text-white bg-dark border border-white mb-3 p-2'>";
-			div_card += "<a href='index.html?pid=" + plugins[i][ar_id] + "' class='text-white text-decoration-none'>"
+			div_card += "<div class='card card-style'>";
+			div_card += "<a href='index.html?pid=" + plugins[i][ar_id] + "'>"
 			div_card += "<img src='" + plugins[i][ar_imagem] + "' class='card-img-top' alt='" + plugins[i][ar_name] + "'>";
 			div_card += "<div class='card-body'>";
 			div_card += "<h5 class='card-title'>" + plugins[i][ar_name] + "</h5>";
@@ -271,7 +273,7 @@ function AddCardItens() {
 			div_card += "</div></a></div>";
 
 		}}
-	
+
 		document.getElementById(group_card_ids[y][0]).innerHTML = div_card;
 	}
 }
