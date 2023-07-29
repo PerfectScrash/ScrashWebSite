@@ -10,7 +10,7 @@ var ar_descricao = 7;
 /*===========================
 Banco de dados improvisado
 ===========================*/
-// Ultimo ID: 35
+// Ultimo ID: 36
 let plugins = [
 	// Main plugins
 	[23, "Dragon Ball Mod", "dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
@@ -32,6 +32,7 @@ let plugins = [
 
 	// Special Class (Both)
 	[12, "Sonic & Shadow", "Pages/Special_Classes/zpsp_spc_sonic_shadow", 2, "zpsp_sp_all", "[ZPSp] Special Class: Sonic & Shadow", "Imagens/sonic_shadow_banner.png", "Play \"Sonic 3D Game\" in CS 1.6 Zombie Plague Mod"],
+	[36, "(ZPSp) Dragon Ball Mod", "Pages/Special_Classes/zpsp_spc_dragon_ball", 2, "zpsp_sp_all", "[ZPSp] Special Class: Dragon Ball Mod", "Imagens/zp-dragonball-banner.png", "Play as Goku, Frieza and Krillin on this gamemode"],
 
 	// Additions
 	[13, "[ZPSp] - XP Level System", "Pages/Addons/zpsp_xp_system", 2, "zpsp_addon", "[ZPSp] Addon: XP Level System", "Imagens/xpsystem_gif.gif", "Turn your Zombie Plague Special 4.5 into Zombie Plague XP"],
@@ -149,9 +150,9 @@ carrossel_home_ids = [
 	1,	// Zombie plague special
 	13, // ZP XP
 	22, // CTF
+	36, // Dragon Ball
 	9,	// Thanos
 	26, // Tag
-	35, // Golden Guitar
 ]
 
 function Get_Carrosel_Home() {
@@ -189,11 +190,12 @@ carrosel_list_plugins = [
 	1,	// Zombie plague special
 	13, // ZP XP
 	22,	// CTF
+	36,	// Dragon Ball
 	9,	// Thanos
 	12,	// Sonic & Shadow
 	20, // Frost m4a1
 	25, // Cannibal
-	35 // Golden Guitar
+	// 35 // Golden Guitar
 ]
 
 function Get_Carrosel_ListPlugins() {
@@ -235,9 +237,9 @@ group_card_ids = [
 ]
 
 cards_plugins = [
-	[1, 23],
-	[9, 3, 12],
-	[18, 35, 20],
+	[1, 23, 22],
+	[9, 3, 12, 2, 4, 36],
+	[18, 35, 20, 17, 19],
 	[13, 14, 16],
 	[26, 25, 29],
 	//[21, 22]
@@ -248,11 +250,11 @@ function AddCardItens() {
 	for (var y = 0; y < group_card_ids.length; y++) {
 		// Criando grupos
 		div_principal = document.getElementById("scrash_cards").innerHTML;
-		div_principal += "<hr/><br/><h3>" + group_card_ids[y][1] + "</h3>";
+		div_principal += "<hr/><h3>" + group_card_ids[y][1] + "</h3>";
 		if(y == 0)
 			div_principal += "<div class='card-group-row' id='" + group_card_ids[y][0] + "'></div>";
 		else
-			div_principal += "<div class='card-group-row mb-5' id='" + group_card_ids[y][0] + "'></div>";
+			div_principal += "<div class='card-group-row mb-3' id='" + group_card_ids[y][0] + "'></div>";
 
 		document.getElementById("scrash_cards").innerHTML = div_principal;
 		//---------------
@@ -264,13 +266,15 @@ function AddCardItens() {
 			if (plugins[i][ar_id] != cards_plugins[y][card] || cards_plugins[y][card] == null)
 				continue;
 
-			div_card += "<div class='card card-style'>";
+			div_card += "<div class='col-12 col-md-6 col-lg-4 px-2 mb-4'>";
+			div_card += "<div class='card card-style h-100'>";
 			div_card += "<a href='index.html?pid=" + plugins[i][ar_id] + "'>"
 			div_card += "<img src='" + plugins[i][ar_imagem] + "' class='card-img-top' alt='" + plugins[i][ar_name] + "'>";
 			div_card += "<div class='card-body'>";
 			div_card += "<h5 class='card-title'>" + plugins[i][ar_name] + "</h5>";
 			div_card += "<p class='card-text'>" + plugins[i][ar_descricao] + "</p>";
 			div_card += "</div></a></div>";
+			div_card += "</div>";
 
 		}}
 

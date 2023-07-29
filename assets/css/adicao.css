@@ -1,7 +1,7 @@
 * {
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
-    font-family: 'Rajdhani', 'Open Sans', sans-serif;
+    font-family: 'Titillium Web', 'Open Sans', sans-serif;
 }
 .dropdown-submenu {
     position: relative;
@@ -68,8 +68,10 @@ body {
     display: flex;
     flex-flow: row wrap;
     flex-direction: row !important;
-    grid-column-gap: 2rem;
-    flex-wrap: nowrap;
+    flex-grow: 3;
+    /* grid-column-gap: 2rem; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .estilo_carrosel {
@@ -160,12 +162,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .card-group-row {
+    /* .card-group-row {
         display: flex;
         flex-flow: row wrap;
         flex-direction: column !important;
         flex-wrap: wrap;
-    }
+    } */
 
     .carousel-caption {
         padding-top: 0.9rem;
@@ -228,7 +230,15 @@ body {
     transition: box-shadow 1.5s, background-color 1.5s, border-color 1.5s, color 1.5s;
 }
 
+.card-title {
+    font-weight: 600;
+}
+.card-text {
+    font-weight: 300;
+}
+
 .card-style {
+    flex-basis: fit-content;
     margin-bottom: 1.5rem !important;
     padding: 0.5rem;
     border-color: #FFF;
@@ -250,11 +260,20 @@ body {
 }
 
 h3 {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     font-weight: 600;
 }
 
 h3.modal-title {
     margin-top: 0;
-
+}
+footer a {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+footer a i {
+    font-size: 21px!important;
 }
