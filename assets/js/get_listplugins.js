@@ -10,7 +10,7 @@ var ar_descricao = 7;
 /*===========================
 Banco de dados improvisado
 ===========================*/
-// Ultimo ID: 36
+// Ultimo ID: 37
 let plugins = [
 	// Main plugins
 	[23, "Dragon Ball Mod", "dbm_official", 1, "pl_main", "Dragon Ball Mod", "Imagens/dbm_banner_site.png", "See this greatest mod for Amx Mod X"],
@@ -36,6 +36,7 @@ let plugins = [
 
 	// Additions
 	[13, "[ZPSp] - XP Level System", "Pages/Addons/zpsp_xp_system", 2, "zpsp_addon", "[ZPSp] Addon: XP Level System", "Imagens/xpsystem_gif.gif", "Turn your Zombie Plague Special 4.5 into Zombie Plague XP"],
+	[37, "VIP System", "Pages/Addons/zpsp_vip_system", 2, "zpsp_addon", "[ZPSp] Addon: VIP System", "Imagens/vip-banner.png", "VIP System for Zombie Plague Special"],
 	[14, "Lasermine Perfect 4.3", "Pages/Addons/zp_lasermine_perfect", 2, "zpsp_addon", "[ZPSp] Addon: Lasermine Perfect 4.3", "Imagens/lasermine_banner.png", "See the best lasermine for zombie plague"],
 	[15, "Custom Player Model", "Pages/Addons/zpsp_addon_cplayer_model", 2, "zpsp_addon", "[ZPSp] Addon: Custom Player Model", "Imagens/banner_site_scrash.gif", "Set a player a custom model"],
 	[16, "Thunder Weapons", "Pages/Addons/thunder_weapons", 2, "zpsp_addon", "[ZPSp] Addon: Thunder Weapons", "Imagens/thunder_wpn_banner.png", "Can evolute your weapons when you kill a zombie"],
@@ -149,10 +150,11 @@ Carrosel da home
 carrossel_home_ids = [
 	1,	// Zombie plague special
 	13, // ZP XP
+	37, // ZP XP
 	22, // CTF
 	36, // Dragon Ball
 	9,	// Thanos
-	26, // Tag
+	// 26, // Tag
 ]
 
 function Get_Carrosel_Home() {
@@ -189,6 +191,7 @@ Carrosel da lista de plugins
 carrosel_list_plugins = [
 	1,	// Zombie plague special
 	13, // ZP XP
+	37, // ZP XP
 	22,	// CTF
 	36,	// Dragon Ball
 	9,	// Thanos
@@ -240,7 +243,7 @@ cards_plugins = [
 	[1, 23, 22],
 	[9, 3, 12, 2, 4, 36],
 	[18, 35, 20, 17, 19],
-	[13, 14, 16],
+	[13, 14, 16, 37, 24, 31],
 	[26, 25, 29],
 	//[21, 22]
 ]
